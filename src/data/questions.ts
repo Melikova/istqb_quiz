@@ -42,6 +42,26 @@ export const QUESTIONS: Question[] = [
         correct: 3
     },
     {
+        question: "When following a standard test process, when should the test control activity take place?",
+        options: [
+            "During the planning activities", 
+            "During the implementation and execution activities", 
+            "During the monitoring activities", 
+            "During all the activities"
+        ],
+        correct: 3
+    },
+    {
+        question: "Which of the following is the activity that compares the planned test progress to the actual test progress?",
+        options: [
+            "Test monitoring", 
+            "Test planning", 
+            "Test closure", 
+            "Test control"
+        ],
+        correct: 0
+    },
+    {
         question: "If you are working on a project that is constrained by time and budget, which is pressuring testing to be done quickly. How should the test approach be adjusted?",
         options: [
             "Develop detailed test cases to reduce the test automation effort", 
@@ -68,6 +88,16 @@ export const QUESTIONS: Question[] = [
             "Developers should determine the order of test execution in the test procedures", 
             "Test design should begin when the code is complete to avoid changes", 
             "Testers should review requirements documents as soon as a readable draft is available"
+        ],
+        correct: 3
+    },
+    {
+        question: "During which level(s) of testing should non-functional tests be executed?",
+        options: [
+            "Unit and integration only", 
+            "System testing only", 
+            "Integration, system and acceptance only", 
+            "Unit, integration, system and acceptance only"
         ],
         correct: 3
     },
