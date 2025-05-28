@@ -180,5 +180,35 @@ export const QUESTIONS: Question[] = [
             "Test implementation is faster"
         ],
         correct: 0
+    },
+    {
+        question: "Usability testing is an example of which type of testing?",
+        options: [
+            "Functional", 
+            "Non-functional", 
+            "Structural", 
+            "Change-related"
+        ],
+        correct: 1
+    },
+    {
+        question: "You work as a tester on a project on a mobile application for food ordering for one of your clients. The client sent you a list of requirements. One of them, with high priority, says “The order must be processed in less than 10 seconds in 95% of the cases”. You created a set of test cases in which a number of random orders were made, the processing time measured, and the test results were checked against the requirements. What test type did you perform?",
+        options: [
+            "Functional, because the test cases cover the user’s business requirement for the system", 
+            "Non-functional, because they measure the system’s performance", 
+            "Functional, because the test cases interact with the user interface", 
+            "White-box, because we need to know the internal structure of the program to measure the order processing time"
+        ],
+        correct: 1
+    },
+    {
+        question: "Which of the following BEST fits as an element of the checklist used in checklist-based testing?",
+        options: [
+            "The developer made an error when implementing the code", 
+            "The achieved statement coverage exceeds 85%", 
+            "The program works correctly regarding functional and non-functional requirements", 
+            "The error messages are written in language that the user can understand"
+        ],
+        correct: 3
     }
 ]
