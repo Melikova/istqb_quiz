@@ -4,7 +4,7 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto flex flex-col sm:flex-row items-center sm:justify-between">
         <div className="flex flex-col sm:flex-row items-center sm:space-x-2 text-center sm:text-left">
           <img
-            src="/src/assets/logo.jpg"
+            src="/logo.jpg"
             alt="Logo"
             className="h-20 w-auto object-contain mb-2 sm:mb-0"
           />

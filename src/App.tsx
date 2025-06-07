@@ -53,7 +53,7 @@ function App() {
 
     const currentQ = shuffledQuestions[currentQuestion];
     if (!currentQ.shuffledOptions || currentQ.shuffledOptions.length === 0) {
-      console.error("No shuffled options found for current question!");
+      // console.error("No shuffled options found for current question!");
       return;
     }
     const userAnswer = currentQ.shuffledOptions[index];
@@ -62,7 +62,7 @@ function App() {
     if (isCorrect) {
       setScore((prev) => prev + 1);
     }else {
-      console.log(currentQ.shuffledOptions);
+      // console.log(currentQ.shuffledOptions);
       setWrongAnswers((prev) => [
         ...prev,
         [currentQ.question, userAnswer],
