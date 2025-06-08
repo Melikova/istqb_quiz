@@ -15,7 +15,7 @@ function App() {
   const [selectedAnswer, setSelectedAnswer] = useState<number | null>(null);
   const [timeLeft, setTimeLeft] = useState<number>(600);
   const [shuffledQuestions, setShuffledQuestions] = useState<typeof QUESTIONS>([]);
-  const [wrongAnswers, setWrongAnswers] = useState<[string, string][]>([]);
+  const [wrongAnswers, setWrongAnswers] = useState<[string, string[]][]>([]);
 
 
   useEffect(() => {
@@ -46,6 +46,7 @@ function App() {
     setScore(0);
     setCurrentQuestion(0);
     setSelectedAnswer(null);
+    setWrongAnswers([]);
   };
 
   const handleAnswer = (index: number): void => {
@@ -53,7 +54,6 @@ function App() {
 
     const currentQ = shuffledQuestions[currentQuestion];
     if (!currentQ.shuffledOptions || currentQ.shuffledOptions.length === 0) {
-      // console.error("No shuffled options found for current question!");
       return;
     }
     const userAnswer = currentQ.shuffledOptions[index];
@@ -62,7 +62,6 @@ function App() {
     if (isCorrect) {
       setScore((prev) => prev + 1);
     }else {
-      // console.log(currentQ.shuffledOptions);
       setWrongAnswers((prev) => [
         ...prev,
         [currentQ.question, userAnswer],

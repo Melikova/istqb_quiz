@@ -2,8 +2,8 @@ export type GameState = "start" | "playing"| "end";
 
 export interface Question {
     question: string;
-    options: string[];
+    options: string[][];
     correct: number;
-    shuffledOptions?: string[];
+    shuffledOptions?: string[][];
     correctIndexInShuffled?: number;
 }
