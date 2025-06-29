@@ -399,7 +399,7 @@ export const QUESTIONS: Question[] = [
     ["To reduce the need for developer involvement in testing", "Shift-left encourages more collaboration, not less."],
     ["To delay integration until all modules are complete", "This goes against the early-testing goal of shift-left."]
   ],
-  keyPoints: "<h3 class='text-green-600'>Essential Key Points to Answer Shift-Left Testing Questions:</h3>\
+  keyPoints: "<h3 class='text-green-600'>Essential Key Points to Answer This Question:</h3>\
 <ul>\
 <li class='mb-2'><b>Shift-left testing means starting testing activities earlier in the software development lifecycle:</b><br> This includes involvement from requirements, design, and coding phases rather than waiting until later stages.</li>\
 <li class='mb-2'><b>Early defect detection and prevention are the main goals:</b><br> Finding defects as soon as possible reduces cost and effort required to fix them.</li>\
@@ -421,7 +421,7 @@ export const QUESTIONS: Question[] = [
     ["Conducting manual system testing post-deployment", "Shift-left promotes earlier testing, not post-deployment testing."],
     ["Running security scans during production", "Production scans are too late to be considered shift-left."]
   ],
-  keyPoints: "<h3 class='text-green-600'>Essential Key Points to Answer Shift-Left Testing Questions:</h3>\
+  keyPoints: "<h3 class='text-green-600'>Essential Key Points to Answer This Question:</h3>\
 <ul>\
 <li class='mb-2'><b>Shift-left testing means starting testing activities earlier in the software development lifecycle:</b><br> This includes involvement from requirements, design, and coding phases rather than waiting until later stages.</li>\
 <li class='mb-2'><b>Early defect detection and prevention are the main goals:</b><br> Finding defects as soon as possible reduces cost and effort required to fix them.</li>\
@@ -443,7 +443,7 @@ export const QUESTIONS: Question[] = [
     ["TDD, ATDD, and BDD", "These approaches start testing early, often before code is written."],
     ["Agile and DevOps", "They support early testing but shift-left is more embedded in TDD, ATDD, and BDD."]
   ],
-  keyPoints: "<h3 class='text-green-600'>Essential Key Points to Answer Shift-Left Testing Questions:</h3>\
+  keyPoints: "<h3 class='text-green-600'>Essential Key Points to Answer This Question:</h3>\
 <ul>\
 <li class='mb-2'><b>Shift-left testing means starting testing activities earlier in the software development lifecycle:</b><br> This includes involvement from requirements, design, and coding phases rather than waiting until later stages.</li>\
 <li class='mb-2'><b>Early defect detection and prevention are the main goals:</b><br> Finding defects as soon as possible reduces cost and effort required to fix them.</li>\
@@ -465,7 +465,7 @@ export const QUESTIONS: Question[] = [
     ["It eliminates the need for defect tracking tools", "Defect tracking is still essential regardless of stakeholder support."],
     ["It removes the need for developer involvement in testing", "Developers are still actively involved in shift-left testing."]
   ],
-  keyPoints: "<h3 class='text-green-600'>Essential Key Points to Answer Shift-Left Testing Questions:</h3>\
+  keyPoints: "<h3 class='text-green-600'>Essential Key Points to Answer This Question:</h3>\
 <ul>\
 <li class='mb-2'><b>Shift-left testing means starting testing activities earlier in the software development lifecycle:</b><br> This includes involvement from requirements, design, and coding phases rather than waiting until later stages.</li>\
 <li class='mb-2'><b>Early defect detection and prevention are the main goals:</b><br> Finding defects as soon as possible reduces cost and effort required to fix them.</li>\
@@ -487,7 +487,7 @@ export const QUESTIONS: Question[] = [
     ["Reviewing user stories during backlog grooming", "Early review aligns with shift-left."],
     ["Writing component-level performance tests early", "Early component testing supports shift-left."]
   ],
-  keyPoints: "<h3 class='text-green-600'>Essential Key Points to Answer Shift-Left Testing Questions:</h3>\
+  keyPoints: "<h3 class='text-green-600'>Essential Key Points to Answer This Question:</h3>\
 <ul>\
 <li class='mb-2'><b>Shift-left testing means starting testing activities earlier in the software development lifecycle:</b><br> This includes involvement from requirements, design, and coding phases rather than waiting until later stages.</li>\
 <li class='mb-2'><b>Early defect detection and prevention are the main goals:</b><br> Finding defects as soon as possible reduces cost and effort required to fix them.</li>\
@@ -509,7 +509,7 @@ export const QUESTIONS: Question[] = [
     ["By integrating code with automated tests for fast feedback", "Automated tests in CI provide early defect detection, supporting shift-left."],
     ["By running only UI tests in production", "This is too late and not the goal of CI."]
   ],
-  keyPoints: "<h3 class='text-green-600'>Essential Key Points to Answer Shift-Left Testing Questions:</h3>\
+  keyPoints: "<h3 class='text-green-600'>Essential Key Points to Answer This Question:</h3>\
 <ul>\
 <li class='mb-2'><b>Shift-left testing means starting testing activities earlier in the software development lifecycle:</b><br> This includes involvement from requirements, design, and coding phases rather than waiting until later stages.</li>\
 <li class='mb-2'><b>Early defect detection and prevention are the main goals:</b><br> Finding defects as soon as possible reduces cost and effort required to fix them.</li>\
@@ -531,7 +531,7 @@ export const QUESTIONS: Question[] = [
     ["Increases bugs in production", "Shift-left reduces bugs by catching them early."],
     ["Prevents reuse of test cases", "Test cases can still be reused with shift-left."]
   ],
-  keyPoints: "<h3 class='text-green-600'>Essential Key Points to Answer Shift-Left Testing Questions:</h3>\
+  keyPoints: "<h3 class='text-green-600'>Essential Key Points to Answer This Question:</h3>\
 <ul>\
 <li class='mb-2'><b>Shift-left testing means starting testing activities earlier in the software development lifecycle:</b><br> This includes involvement from requirements, design, and coding phases rather than waiting until later stages.</li>\
 <li class='mb-2'><b>Early defect detection and prevention are the main goals:</b><br> Finding defects as soon as possible reduces cost and effort required to fix them.</li>\
@@ -553,7 +553,7 @@ export const QUESTIONS: Question[] = [
     ["Skip test case design in favor of exploratory testing", "Exploratory testing complements but doesn’t replace planned test cases."],
     ["Focus only on system-level test cases", "Shift-left promotes earlier testing at all levels."]
   ],
-  keyPoints: "<h3 class='text-green-600'>Essential Key Points to Answer Shift-Left Testing Questions:</h3>\
+  keyPoints: "<h3 class='text-green-600'>Essential Key Points to Answer This Question:</h3>\
 <ul>\
 <li class='mb-2'><b>Shift-left testing means starting testing activities earlier in the software development lifecycle:</b><br> This includes involvement from requirements, design, and coding phases rather than waiting until later stages.</li>\
 <li class='mb-2'><b>Early defect detection and prevention are the main goals:</b><br> Finding defects as soon as possible reduces cost and effort required to fix them.</li>\
@@ -575,7 +575,7 @@ export const QUESTIONS: Question[] = [
     ["Performing usability testing after UAT", "This is too late in the cycle."],
     ["Deferring load testing until deployment", "Deferring contradicts shift-left principles."]
   ],
-  keyPoints: "<h3 class='text-green-600'>Essential Key Points to Answer Shift-Left Testing Questions:</h3>\
+  keyPoints: "<h3 class='text-green-600'>Essential Key Points to Answer This Question:</h3>\
 <ul>\
 <li class='mb-2'><b>Shift-left testing means starting testing activities earlier in the software development lifecycle:</b><br> This includes involvement from requirements, design, and coding phases rather than waiting until later stages.</li>\
 <li class='mb-2'><b>Early defect detection and prevention are the main goals:</b><br> Finding defects as soon as possible reduces cost and effort required to fix them.</li>\
@@ -597,7 +597,7 @@ export const QUESTIONS: Question[] = [
     ["Testing is only effective once all code has been written", "This contradicts shift-left’s goal of early testing."],
     ["Writing automated unit tests before coding aligns with shift-left", "This supports the shift-left methodology."]
   ],
-  keyPoints: "<h3 class='text-green-600'>Essential Key Points to Answer Shift-Left Testing Questions:</h3>\
+  keyPoints: "<h3 class='text-green-600'>Essential Key Points to Answer This Question:</h3>\
 <ul>\
 <li class='mb-2'><b>Shift-left testing means starting testing activities earlier in the software development lifecycle:</b><br> This includes involvement from requirements, design, and coding phases rather than waiting until later stages.</li>\
 <li class='mb-2'><b>Early defect detection and prevention are the main goals:</b><br> Finding defects as soon as possible reduces cost and effort required to fix them.</li>\
