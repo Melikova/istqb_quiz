@@ -19,6 +19,12 @@ export default function StartScreen({onStart}: StartScreenProps){
                   <li>Quiz ends when all questions are answered or time runs out.</li>
                   <li>You can restart after the quiz ends.</li>
                 </ul>
+                {/* <h2 className="text-xl font-semibold mb-2">Additional Features</h2> */}
+                <ul className="list-disc pl-5 space-y-1 text-sm sm:text-base mt-5 font-semibold">
+                  <li>After the quiz, you can review your incorrect answers</li>
+                  <li>Click on your answer to see why it was incorrect</li>
+                  <li>You'll also be shown Essential Key Points to help you understand how to answer similar questions correctly in the future. <span className="font-normal italic text-red-500">** Some key points are currently being prepared and will be available soon</span></li>
+                </ul>
             </div>
             <button 
                 onClick={onStart} 

@@ -15,7 +15,7 @@ function App() {
   const [selectedAnswer, setSelectedAnswer] = useState<number | null>(null);
   const [timeLeft, setTimeLeft] = useState<number>(600);
   const [shuffledQuestions, setShuffledQuestions] = useState<typeof QUESTIONS>([]);
-  const [wrongAnswers, setWrongAnswers] = useState<[string, string[]][]>([]);
+  const [wrongAnswers, setWrongAnswers] = useState<[string, string[], string][]>([]);
 
 
   useEffect(() => {
@@ -64,7 +64,7 @@ function App() {
     }else {
       setWrongAnswers((prev) => [
         ...prev,
-        [currentQ.question, userAnswer],
+        [currentQ.question, userAnswer, currentQ.keyPoints]
       ]);
     }
 

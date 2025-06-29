@@ -11,6 +11,14 @@ export const QUESTIONS: Question[] = [
       ["Evaluating work products", "correct"],
       ["Providing information for decision making", "Providing decision-making information is a higher-level test objective, often achieved after executing tests and analyzing results. In early stages, reviewing the test basis doesn’t directly provide management with decision-making data—it’s more focused on improving the quality of the artifacts before development begins."]
     ],
+    keyPoints: "<h3 class='text-green-600'>Essential Key Points to Answer This Question:</h3>\
+<ul>\
+<li class='mb-2'><b>One of the key objectives of testing is to evaluate work products:</b><br> This means assessing documents like requirements, design specifications, and models early in the lifecycle to improve their quality.</li>\
+<li class='mb-2'><b>Testers can detect issues before code is written:</b><br> By reviewing the test basis early (e.g., requirements), testers help prevent defects from being introduced in the first place.</li>\
+<li class='mb-2'><b>This activity is called static testing:</b><br> It includes techniques such as reviews, walkthroughs, and inspections—used to evaluate work products without executing code.</li>\
+<li class='mb-2'><b>Finding defects may be a result, but not the core goal here:</b><br> The main objective is to evaluate and improve the quality and clarity of the documentation and other test basis artifacts.</li>\
+<li class='mb-2'><b>Gaining confidence and providing decision-making support</b> typically happen later—<br> after executing tests and analyzing outcomes. Early reviews are about evaluating inputs, not outputs.</li>\
+</ul>",
     correct: 2
   },
   {
@@ -23,6 +31,12 @@ export const QUESTIONS: Question[] = [
       ["Skills First", "Skills First may sound like an approach where people use their strongest skills, but it's not a formal Agile concept. Agile values cross-functionality, not just relying on specific individuals' primary skills. This choice misses the core Agile value of team collaboration."],
       ["First Aid", "First Aid refers to emergency medical help, and has no connection to Agile practices. This option is meant to be humorous or a clear distractor."]
     ],
+    keyPoints: "<h3 class='text-green-600'>Essential Key Points to Answer This Question:</h3>\
+<ul>\
+<li class='mb-2'><b>“Whole Team” is a core Agile principle:</b><br> It emphasizes that all members of the team, regardless of role, contribute to quality and project success collaboratively.</li>\
+<li class='mb-2'><b>Cross-functional collaboration is encouraged:</b><br> Testers may help with development tasks, and developers may support testing, breaking traditional role silos.</li>\
+<li class='mb-2'><b>This approach improves communication, reduces handoffs, and increases shared ownership:</b><br> Everyone is responsible for quality, not just testers.</li>\
+</ul>",
     correct: 1
   },
   {
@@ -34,6 +48,13 @@ export const QUESTIONS: Question[] = [
       ["A developer has introduced a failure which results in a defect that may be seen as a mistake during dynamic testing", "This reverses everything: A developer cannot introduce a failure directly; failures only occur when a defect is executed. Defects don’t result in mistakes. Mistakes are made by humans, not observed during dynamic testing."],
       ["A developer makes a mistake which causes a bug that may be seen as a defect when the software is executed", "While the terms bug and defect are often used interchangeably, this option suggests that a bug becomes a defect, which is redundant. Also, defects are not seen during execution — failures are. The defect is the cause, not the observed result."]
     ],
+    keyPoints: "<h3 class='text-green-600'>Essential Key Points to Answer This Question:</h3>\
+<ul>\
+<li class='mb-2'><b>Mistake → Defect → Failure is the correct sequence:</b><br> A human <i>makes a mistake</i> (also called an <i>error</i>), which introduces a <i>defect (fault)</i> into the code, which may lead to a <i>failure</i> when the software is executed.</li>\
+<li class='mb-2'><b>An error is a synonym for a mistake:</b><br> It refers to a human action that leads to incorrect results — such as misunderstanding a requirement or making a logic error in code.</li>\
+<li class='mb-2'><b>A defect (or fault, or bug) is the result of that mistake in the software:</b><br> It exists in the code or documentation and may not immediately cause a visible issue.</li>\
+<li class='mb-2'><b>A failure occurs when the defect is executed and causes incorrect behavior:</b><br> Failures are what testers observe during dynamic testing.</li>\
+</ul>",
     correct: 0
   },
   {
@@ -45,6 +66,10 @@ export const QUESTIONS: Question[] = [
       ["Tests should not be context dependent", "This is unrelated to the principle being discussed. While context independence can be a goal in test design, it doesn't address the issue of repetitive testing becoming less effective over time."],
       ["Running the same tests repeatedly will reduce the chance of finding new failures", "correct"]
     ],
+    keyPoints: "<h3 class='text-green-600'>Essential Key Points to Answer This Question:</h3>\
+    <ul>\
+    <li class='mb-2'><b>SOON</li>\
+    </ul>",
     correct: 3
   },
   {
@@ -57,6 +82,10 @@ export const QUESTIONS: Question[] = [
       ["During the monitoring activities", "Test control and monitoring are related but not the same. Control involves taking action based on monitoring data. Limiting control to monitoring only misses its role in earlier phases."],
       ["During all the activities", "correct"]
     ],
+    keyPoints: "<h3 class='text-green-600'>Essential Key Points to Answer This Question:</h3>\
+    <ul>\
+    <li class='mb-2'><b>SOON</li>\
+    </ul>",
     correct: 3
   },
   {
@@ -69,6 +98,10 @@ export const QUESTIONS: Question[] = [
       ["Test closure", "This happens at the end of testing, when results are finalized and lessons learned are documented."],
       ["Test control", "Control is the response activity that acts upon information gathered during monitoring, not the comparison itself."]
     ],
+    keyPoints: "<h3 class='text-green-600'>Essential Key Points to Answer This Question:</h3>\
+    <ul>\
+    <li class='mb-2'><b>SOON</li>\
+    </ul>",
     correct: 0
   },
   {
@@ -81,6 +114,10 @@ export const QUESTIONS: Question[] = [
       ["Ensure that your testing starts only after the developers have completed integration tests", "Waiting until developers finish integration testing delays the start of your testing, which is not good when you’re pressured for time."],
       ["Develop end-to-end test automation before performing manual testing so the automation can be used sooner", "Developing end-to-end automation takes a lot of time upfront and may not be feasible under strict time and budget constraints. Manual testing or lightweight techniques can deliver faster feedback."]
     ],
+    keyPoints: "<h3 class='text-green-600'>Essential Key Points to Answer This Question:</h3>\
+    <ul>\
+    <li class='mb-2'><b>SOON</li>\
+    </ul>",
     correct: 1
   },
   {
@@ -104,6 +141,10 @@ export const QUESTIONS: Question[] = [
         "While time may be a factor, the main issue is lack of objectivity."
       ]
     ],
+    keyPoints: "<h3 class='text-green-600'>Essential Key Points to Answer This Question:</h3>\
+    <ul>\
+    <li class='mb-2'><b>SOON</li>\
+    </ul>",
     correct: 2
   },
   {
@@ -127,6 +168,13 @@ export const QUESTIONS: Question[] = [
         "Correct. Early reviews help identify issues early, improving quality and saving time."
       ]
     ],
+    keyPoints: "<h3 class='text-green-600'>Essential Key Points to Answer This Question:</h3>\
+<ul>\
+<li class='mb-2'><b>Early test design and review is a good testing practice:</b><br> Reviewing requirements documents as soon as a readable draft is available helps identify issues early and improve overall quality.</li>\
+<li class='mb-2'><b>Shift-left testing encourages starting test design early:</b><br> Waiting until code completion delays testing and increases risk of defects.</li>\
+<li class='mb-2'><b>Testers are usually responsible for determining test execution order:</b><br> Developers can provide input but it’s not their primary role.</li>\
+<li class='mb-2'><b>Development experience for testers can be beneficial but is not essential:</b><br> It does not guarantee good testing practices on its own.</li>\
+</ul>",
     correct: 3
   },
   {
@@ -150,6 +198,10 @@ export const QUESTIONS: Question[] = [
         "Correct. Non-functional testing can occur at all levels depending on goals and feasibility."
       ]
     ],
+    keyPoints: "<h3 class='text-green-600'>Essential Key Points to Answer This Question:</h3>\
+    <ul>\
+    <li class='mb-2'><b>SOON</li>\
+    </ul>",
     correct: 3
   },
   {
@@ -173,6 +225,10 @@ export const QUESTIONS: Question[] = [
         "Stakeholders can test, but the main goal is aligning product goals—not using them as testers."
       ]
     ],
+    keyPoints: "<h3 class='text-green-600'>Essential Key Points to Answer This Question:</h3>\
+    <ul>\
+    <li class='mb-2'><b>SOON</li>\
+    </ul>",
     correct: 1
   },
   {
@@ -184,6 +240,14 @@ export const QUESTIONS: Question[] = [
     ["Early execution of the code provides a gauge of code quality", "Static analysis does not require code execution."],
     ["Tools are not needed because reviews are used instead of executing code", "Static analysis uses tools to analyze code without executing it."]
   ],
+  keyPoints: "<h3>Essential Key Points to Answer This Question:</h3>\
+<ul>\
+<li><b>Static analysis is performed without executing the code:</b><br>It examines source code, or related artifacts using tools or manual review.</li>\
+<li><b>Static analysis can detect certain defects earlier than dynamic testing:</b><br>These include coding standard violations, unreachable code, data flow issues, and security vulnerabilities.</li>\
+<li><b>Static analysis is typically automated using tools:</b><br>Tools can scan large codebases quickly and highlight potential issues that may not surface during runtime.</li>\
+<li><b>Dynamic testing involves executing code:</b><br>So it can only find defects that manifest during execution. Static analysis complements it by catching other issues earlier.</li>\
+<li><b>Early detection reduces cost and effort:</b><br>Finding defects during static analysis (pre-execution) is generally cheaper than finding them after deployment or during test execution.</li>\
+</ul>",
   correct: 0
 },
 {
@@ -195,6 +259,10 @@ export const QUESTIONS: Question[] = [
     ["Individual review", "Reviewers examine the product individually during this phase."],
     ["Fixing and reporting", "This phase happens after review findings are recorded and fixed."]
   ],
+  keyPoints: "<h3 class='text-green-600'>Essential Key Points to Answer This Question:</h3>\
+    <ul>\
+    <li class='mb-2'><b>SOON</li>\
+    </ul>",
   correct: 0
 },
 {
@@ -206,6 +274,10 @@ export const QUESTIONS: Question[] = [
     ["You can target the developer’s efforts to the areas that users will be more likely to use", "This is more relevant to usage-based testing, not specifically experience-based."],
     ["It is supported by strong tools and can be automated", "Experience-based testing is typically manual and informal."]
   ],
+  keyPoints: "<h3 class='text-green-600'>Essential Key Points to Answer This Question:</h3>\
+    <ul>\
+    <li class='mb-2'><b>SOON</li>\
+    </ul>",
   correct: 0
 },
 {
@@ -217,6 +289,10 @@ export const QUESTIONS: Question[] = [
     ["A development technique to verify that all error paths have been coded", "This is a development activity, not a testing technique."],
     ["A planning technique used to anticipate likely schedule variances due to faults", "This relates to project planning, not error guessing."]
   ],
+  keyPoints: "<h3 class='text-green-600'>Essential Key Points to Answer This Question:</h3>\
+    <ul>\
+    <li class='mb-2'><b>SOON</li>\
+    </ul>",
   correct: 0
 },
 {
@@ -228,6 +304,13 @@ export const QUESTIONS: Question[] = [
     ["The test case template", "The template helps standardize format but not the writing rules or quality expectations."],
     ["The project plan", "This document manages project tasks and timelines, not test case writing rules."]
   ],
+  keyPoints: "<h3 class='text-green-600'>Essential Key Points to Answer This Question:</h3>\
+<ul>\
+  <li class='mb-2'><b>The test plan defines how testing is to be conducted:</b><br>Including standards for test design, templates, and level of detail.</li>\
+  <li class='mb-2'><b>The ISTQB syllabus states test plans include communication and documentation templates:</b><br>Which ensures consistency in test case format and completeness.</li>\
+  <li class='mb-2'><b>Test case inconsistency is a process-level issue:</b><br>And the correct place to align team practices is through the test plan, not ad hoc discussions.</li>\
+  <li class='mb-2'><b>Proper planning ensures shared understanding among testers:</b><br>Preventing ambiguity and improving maintainability, coverage, and quality.</li>\
+</ul>",
   correct: 0
 },
 {
@@ -239,6 +322,10 @@ export const QUESTIONS: Question[] = [
     ["Priority low, severity low", "A crash is not low severity even if it’s rare."],
     ["Priority low, severity high", "The defect causes a crash (high severity), but it's rare (low priority)."]
   ],
+  keyPoints: "<h3 class='text-green-600'>Essential Key Points to Answer This Question:</h3>\
+    <ul>\
+    <li class='mb-2'><b>SOON</li>\
+    </ul>",
   correct: 3
 },
 {
@@ -250,6 +337,10 @@ export const QUESTIONS: Question[] = [
     ["ROI is easy to determine", "ROI can be complex to calculate due to upfront costs."],
     ["Test implementation is faster", "Implementing automated tests can initially take more time."]
   ],
+  keyPoints: "<h3 class='text-green-600'>Essential Key Points to Answer This Question:</h3>\
+    <ul>\
+    <li class='mb-2'><b>SOON</li>\
+    </ul>",
   correct: 0
 },
 {
@@ -261,6 +352,10 @@ export const QUESTIONS: Question[] = [
     ["Structural", "Structural testing involves code structure, not user experience."],
     ["Change-related", "Usability is not related to change-related testing."]
   ],
+  keyPoints: "<h3 class='text-green-600'>Essential Key Points to Answer This Question:</h3>\
+    <ul>\
+    <li class='mb-2'><b>SOON</li>\
+    </ul>",
   correct: 1
 },
 {
@@ -272,6 +367,10 @@ export const QUESTIONS: Question[] = [
     ["Functional, because the test cases interact with the user interface", "Interaction with UI doesn’t necessarily define the test type."],
     ["White-box, because we need to know the internal structure of the program to measure the order processing time", "White-box refers to testing code logic; this scenario is black-box."]
   ],
+  keyPoints: "<h3 class='text-green-600'>Essential Key Points to Answer This Question:</h3>\
+    <ul>\
+    <li class='mb-2'><b>SOON</li>\
+    </ul>",
   correct: 1
 },
 {
@@ -283,6 +382,12 @@ export const QUESTIONS: Question[] = [
     ["The program works correctly regarding functional and non-functional requirements", "Too broad and vague for a checklist item."],
     ["The error messages are written in language that the user can understand", "This is a concrete, testable condition appropriate for a checklist."]
   ],
+  keyPoints: "<h3 class='text-green-600'>Essential Key Points to Answer This Question:</h3>\
+    <ul>\
+    <li class='mb-2'><b>Checklist items should be specific, actionable, and testable:</b> <br>Each item should be phrased in the form of a question or condition that can be checked directly.</li>\
+    <li class='mb-2'><b>Checklist items come from experience, user priorities, or knowledge of failures:</b> <br>Built from experience, what’s important for the user, or understanding of how software fails.</li>\
+    <li class='mb-2'><b>Checklist items are NOT metrics, criteria, or overly general ideas:</b> <br>Should not include metrics like coverage %, entry/exit criteria, or vague statements.</li>\
+    </ul>",
   correct: 3
 },
 {
@@ -294,6 +399,17 @@ export const QUESTIONS: Question[] = [
     ["To reduce the need for developer involvement in testing", "Shift-left encourages more collaboration, not less."],
     ["To delay integration until all modules are complete", "This goes against the early-testing goal of shift-left."]
   ],
+  keyPoints: "<h3 class='text-green-600'>Essential Key Points to Answer Shift-Left Testing Questions:</h3>\
+<ul>\
+<li class='mb-2'><b>Shift-left testing means starting testing activities earlier in the software development lifecycle:</b><br> This includes involvement from requirements, design, and coding phases rather than waiting until later stages.</li>\
+<li class='mb-2'><b>Early defect detection and prevention are the main goals:</b><br> Finding defects as soon as possible reduces cost and effort required to fix them.</li>\
+<li class='mb-2'><b>Shift-left encourages collaboration and involvement of all stakeholders:</b><br> Developers, testers, and business representatives work closely together early on.</li>\
+<li class='mb-2'><b>Common practices supporting shift-left include:</b><br> Static analysis, early reviews (requirements, design, user stories), test-driven development (TDD), behavior-driven development (BDD), and automated unit and component testing.</li>\
+<li class='mb-2'><b>Continuous Integration (CI) tools support shift-left by automating tests and providing quick feedback on code changes:</b><br> CI helps catch issues early through fast feedback loops.</li>\
+<li class='mb-2'><b>Shift-left is embedded in Agile, DevOps, and modern iterative development approaches:</b><br> These methodologies promote early and continuous testing throughout the lifecycle.</li>\
+<li class='mb-2'><b>Challenges of shift-left include the need for upfront investment in tools, training, and cultural change:</b><br> Teams need preparation and buy-in to implement early testing effectively.</li>\
+<li class='mb-2'><b>Shift-left testing covers both functional and non-functional testing early on, such as performance and security testing at component levels:</b><br> Early evaluation ensures better quality and prevents late surprises.</li>\
+</ul>",
   correct: 1
 },
 {
@@ -305,6 +421,17 @@ export const QUESTIONS: Question[] = [
     ["Conducting manual system testing post-deployment", "Shift-left promotes earlier testing, not post-deployment testing."],
     ["Running security scans during production", "Production scans are too late to be considered shift-left."]
   ],
+  keyPoints: "<h3 class='text-green-600'>Essential Key Points to Answer Shift-Left Testing Questions:</h3>\
+<ul>\
+<li class='mb-2'><b>Shift-left testing means starting testing activities earlier in the software development lifecycle:</b><br> This includes involvement from requirements, design, and coding phases rather than waiting until later stages.</li>\
+<li class='mb-2'><b>Early defect detection and prevention are the main goals:</b><br> Finding defects as soon as possible reduces cost and effort required to fix them.</li>\
+<li class='mb-2'><b>Shift-left encourages collaboration and involvement of all stakeholders:</b><br> Developers, testers, and business representatives work closely together early on.</li>\
+<li class='mb-2'><b>Common practices supporting shift-left include:</b><br> Static analysis, early reviews (requirements, design, user stories), test-driven development (TDD), behavior-driven development (BDD), and automated unit and component testing.</li>\
+<li class='mb-2'><b>Continuous Integration (CI) tools support shift-left by automating tests and providing quick feedback on code changes:</b><br> CI helps catch issues early through fast feedback loops.</li>\
+<li class='mb-2'><b>Shift-left is embedded in Agile, DevOps, and modern iterative development approaches:</b><br> These methodologies promote early and continuous testing throughout the lifecycle.</li>\
+<li class='mb-2'><b>Challenges of shift-left include the need for upfront investment in tools, training, and cultural change:</b><br> Teams need preparation and buy-in to implement early testing effectively.</li>\
+<li class='mb-2'><b>Shift-left testing covers both functional and non-functional testing early on, such as performance and security testing at component levels:</b><br> Early evaluation ensures better quality and prevents late surprises.</li>\
+</ul>",
   correct: 0
 },
 {
@@ -316,6 +443,17 @@ export const QUESTIONS: Question[] = [
     ["TDD, ATDD, and BDD", "These approaches start testing early, often before code is written."],
     ["Agile and DevOps", "They support early testing but shift-left is more embedded in TDD, ATDD, and BDD."]
   ],
+  keyPoints: "<h3 class='text-green-600'>Essential Key Points to Answer Shift-Left Testing Questions:</h3>\
+<ul>\
+<li class='mb-2'><b>Shift-left testing means starting testing activities earlier in the software development lifecycle:</b><br> This includes involvement from requirements, design, and coding phases rather than waiting until later stages.</li>\
+<li class='mb-2'><b>Early defect detection and prevention are the main goals:</b><br> Finding defects as soon as possible reduces cost and effort required to fix them.</li>\
+<li class='mb-2'><b>Shift-left encourages collaboration and involvement of all stakeholders:</b><br> Developers, testers, and business representatives work closely together early on.</li>\
+<li class='mb-2'><b>Common practices supporting shift-left include:</b><br> Static analysis, early reviews (requirements, design, user stories), test-driven development (TDD), behavior-driven development (BDD), and automated unit and component testing.</li>\
+<li class='mb-2'><b>Continuous Integration (CI) tools support shift-left by automating tests and providing quick feedback on code changes:</b><br> CI helps catch issues early through fast feedback loops.</li>\
+<li class='mb-2'><b>Shift-left is embedded in Agile, DevOps, and modern iterative development approaches:</b><br> These methodologies promote early and continuous testing throughout the lifecycle.</li>\
+<li class='mb-2'><b>Challenges of shift-left include the need for upfront investment in tools, training, and cultural change:</b><br> Teams need preparation and buy-in to implement early testing effectively.</li>\
+<li class='mb-2'><b>Shift-left testing covers both functional and non-functional testing early on, such as performance and security testing at component levels:</b><br> Early evaluation ensures better quality and prevents late surprises.</li>\
+</ul>",
   correct: 2
 },
 {
@@ -327,6 +465,17 @@ export const QUESTIONS: Question[] = [
     ["It eliminates the need for defect tracking tools", "Defect tracking is still essential regardless of stakeholder support."],
     ["It removes the need for developer involvement in testing", "Developers are still actively involved in shift-left testing."]
   ],
+  keyPoints: "<h3 class='text-green-600'>Essential Key Points to Answer Shift-Left Testing Questions:</h3>\
+<ul>\
+<li class='mb-2'><b>Shift-left testing means starting testing activities earlier in the software development lifecycle:</b><br> This includes involvement from requirements, design, and coding phases rather than waiting until later stages.</li>\
+<li class='mb-2'><b>Early defect detection and prevention are the main goals:</b><br> Finding defects as soon as possible reduces cost and effort required to fix them.</li>\
+<li class='mb-2'><b>Shift-left encourages collaboration and involvement of all stakeholders:</b><br> Developers, testers, and business representatives work closely together early on.</li>\
+<li class='mb-2'><b>Common practices supporting shift-left include:</b><br> Static analysis, early reviews (requirements, design, user stories), test-driven development (TDD), behavior-driven development (BDD), and automated unit and component testing.</li>\
+<li class='mb-2'><b>Continuous Integration (CI) tools support shift-left by automating tests and providing quick feedback on code changes:</b><br> CI helps catch issues early through fast feedback loops.</li>\
+<li class='mb-2'><b>Shift-left is embedded in Agile, DevOps, and modern iterative development approaches:</b><br> These methodologies promote early and continuous testing throughout the lifecycle.</li>\
+<li class='mb-2'><b>Challenges of shift-left include the need for upfront investment in tools, training, and cultural change:</b><br> Teams need preparation and buy-in to implement early testing effectively.</li>\
+<li class='mb-2'><b>Shift-left testing covers both functional and non-functional testing early on, such as performance and security testing at component levels:</b><br> Early evaluation ensures better quality and prevents late surprises.</li>\
+</ul>",
   correct: 1
 },
 {
@@ -338,6 +487,17 @@ export const QUESTIONS: Question[] = [
     ["Reviewing user stories during backlog grooming", "Early review aligns with shift-left."],
     ["Writing component-level performance tests early", "Early component testing supports shift-left."]
   ],
+  keyPoints: "<h3 class='text-green-600'>Essential Key Points to Answer Shift-Left Testing Questions:</h3>\
+<ul>\
+<li class='mb-2'><b>Shift-left testing means starting testing activities earlier in the software development lifecycle:</b><br> This includes involvement from requirements, design, and coding phases rather than waiting until later stages.</li>\
+<li class='mb-2'><b>Early defect detection and prevention are the main goals:</b><br> Finding defects as soon as possible reduces cost and effort required to fix them.</li>\
+<li class='mb-2'><b>Shift-left encourages collaboration and involvement of all stakeholders:</b><br> Developers, testers, and business representatives work closely together early on.</li>\
+<li class='mb-2'><b>Common practices supporting shift-left include:</b><br> Static analysis, early reviews (requirements, design, user stories), test-driven development (TDD), behavior-driven development (BDD), and automated unit and component testing.</li>\
+<li class='mb-2'><b>Continuous Integration (CI) tools support shift-left by automating tests and providing quick feedback on code changes:</b><br> CI helps catch issues early through fast feedback loops.</li>\
+<li class='mb-2'><b>Shift-left is embedded in Agile, DevOps, and modern iterative development approaches:</b><br> These methodologies promote early and continuous testing throughout the lifecycle.</li>\
+<li class='mb-2'><b>Challenges of shift-left include the need for upfront investment in tools, training, and cultural change:</b><br> Teams need preparation and buy-in to implement early testing effectively.</li>\
+<li class='mb-2'><b>Shift-left testing covers both functional and non-functional testing early on, such as performance and security testing at component levels:</b><br> Early evaluation ensures better quality and prevents late surprises.</li>\
+</ul>",
   correct: 1
 },
 {
@@ -349,6 +509,17 @@ export const QUESTIONS: Question[] = [
     ["By integrating code with automated tests for fast feedback", "Automated tests in CI provide early defect detection, supporting shift-left."],
     ["By running only UI tests in production", "This is too late and not the goal of CI."]
   ],
+  keyPoints: "<h3 class='text-green-600'>Essential Key Points to Answer Shift-Left Testing Questions:</h3>\
+<ul>\
+<li class='mb-2'><b>Shift-left testing means starting testing activities earlier in the software development lifecycle:</b><br> This includes involvement from requirements, design, and coding phases rather than waiting until later stages.</li>\
+<li class='mb-2'><b>Early defect detection and prevention are the main goals:</b><br> Finding defects as soon as possible reduces cost and effort required to fix them.</li>\
+<li class='mb-2'><b>Shift-left encourages collaboration and involvement of all stakeholders:</b><br> Developers, testers, and business representatives work closely together early on.</li>\
+<li class='mb-2'><b>Common practices supporting shift-left include:</b><br> Static analysis, early reviews (requirements, design, user stories), test-driven development (TDD), behavior-driven development (BDD), and automated unit and component testing.</li>\
+<li class='mb-2'><b>Continuous Integration (CI) tools support shift-left by automating tests and providing quick feedback on code changes:</b><br> CI helps catch issues early through fast feedback loops.</li>\
+<li class='mb-2'><b>Shift-left is embedded in Agile, DevOps, and modern iterative development approaches:</b><br> These methodologies promote early and continuous testing throughout the lifecycle.</li>\
+<li class='mb-2'><b>Challenges of shift-left include the need for upfront investment in tools, training, and cultural change:</b><br> Teams need preparation and buy-in to implement early testing effectively.</li>\
+<li class='mb-2'><b>Shift-left testing covers both functional and non-functional testing early on, such as performance and security testing at component levels:</b><br> Early evaluation ensures better quality and prevents late surprises.</li>\
+</ul>",
   correct: 2
 },
 {
@@ -360,6 +531,17 @@ export const QUESTIONS: Question[] = [
     ["Increases bugs in production", "Shift-left reduces bugs by catching them early."],
     ["Prevents reuse of test cases", "Test cases can still be reused with shift-left."]
   ],
+  keyPoints: "<h3 class='text-green-600'>Essential Key Points to Answer Shift-Left Testing Questions:</h3>\
+<ul>\
+<li class='mb-2'><b>Shift-left testing means starting testing activities earlier in the software development lifecycle:</b><br> This includes involvement from requirements, design, and coding phases rather than waiting until later stages.</li>\
+<li class='mb-2'><b>Early defect detection and prevention are the main goals:</b><br> Finding defects as soon as possible reduces cost and effort required to fix them.</li>\
+<li class='mb-2'><b>Shift-left encourages collaboration and involvement of all stakeholders:</b><br> Developers, testers, and business representatives work closely together early on.</li>\
+<li class='mb-2'><b>Common practices supporting shift-left include:</b><br> Static analysis, early reviews (requirements, design, user stories), test-driven development (TDD), behavior-driven development (BDD), and automated unit and component testing.</li>\
+<li class='mb-2'><b>Continuous Integration (CI) tools support shift-left by automating tests and providing quick feedback on code changes:</b><br> CI helps catch issues early through fast feedback loops.</li>\
+<li class='mb-2'><b>Shift-left is embedded in Agile, DevOps, and modern iterative development approaches:</b><br> These methodologies promote early and continuous testing throughout the lifecycle.</li>\
+<li class='mb-2'><b>Challenges of shift-left include the need for upfront investment in tools, training, and cultural change:</b><br> Teams need preparation and buy-in to implement early testing effectively.</li>\
+<li class='mb-2'><b>Shift-left testing covers both functional and non-functional testing early on, such as performance and security testing at component levels:</b><br> Early evaluation ensures better quality and prevents late surprises.</li>\
+</ul>",
   correct: 0
 },
 {
@@ -371,6 +553,17 @@ export const QUESTIONS: Question[] = [
     ["Skip test case design in favor of exploratory testing", "Exploratory testing complements but doesn’t replace planned test cases."],
     ["Focus only on system-level test cases", "Shift-left promotes earlier testing at all levels."]
   ],
+  keyPoints: "<h3 class='text-green-600'>Essential Key Points to Answer Shift-Left Testing Questions:</h3>\
+<ul>\
+<li class='mb-2'><b>Shift-left testing means starting testing activities earlier in the software development lifecycle:</b><br> This includes involvement from requirements, design, and coding phases rather than waiting until later stages.</li>\
+<li class='mb-2'><b>Early defect detection and prevention are the main goals:</b><br> Finding defects as soon as possible reduces cost and effort required to fix them.</li>\
+<li class='mb-2'><b>Shift-left encourages collaboration and involvement of all stakeholders:</b><br> Developers, testers, and business representatives work closely together early on.</li>\
+<li class='mb-2'><b>Common practices supporting shift-left include:</b><br> Static analysis, early reviews (requirements, design, user stories), test-driven development (TDD), behavior-driven development (BDD), and automated unit and component testing.</li>\
+<li class='mb-2'><b>Continuous Integration (CI) tools support shift-left by automating tests and providing quick feedback on code changes:</b><br> CI helps catch issues early through fast feedback loops.</li>\
+<li class='mb-2'><b>Shift-left is embedded in Agile, DevOps, and modern iterative development approaches:</b><br> These methodologies promote early and continuous testing throughout the lifecycle.</li>\
+<li class='mb-2'><b>Challenges of shift-left include the need for upfront investment in tools, training, and cultural change:</b><br> Teams need preparation and buy-in to implement early testing effectively.</li>\
+<li class='mb-2'><b>Shift-left testing covers both functional and non-functional testing early on, such as performance and security testing at component levels:</b><br> Early evaluation ensures better quality and prevents late surprises.</li>\
+</ul>",
   correct: 1
 },
 {
@@ -382,6 +575,17 @@ export const QUESTIONS: Question[] = [
     ["Performing usability testing after UAT", "This is too late in the cycle."],
     ["Deferring load testing until deployment", "Deferring contradicts shift-left principles."]
   ],
+  keyPoints: "<h3 class='text-green-600'>Essential Key Points to Answer Shift-Left Testing Questions:</h3>\
+<ul>\
+<li class='mb-2'><b>Shift-left testing means starting testing activities earlier in the software development lifecycle:</b><br> This includes involvement from requirements, design, and coding phases rather than waiting until later stages.</li>\
+<li class='mb-2'><b>Early defect detection and prevention are the main goals:</b><br> Finding defects as soon as possible reduces cost and effort required to fix them.</li>\
+<li class='mb-2'><b>Shift-left encourages collaboration and involvement of all stakeholders:</b><br> Developers, testers, and business representatives work closely together early on.</li>\
+<li class='mb-2'><b>Common practices supporting shift-left include:</b><br> Static analysis, early reviews (requirements, design, user stories), test-driven development (TDD), behavior-driven development (BDD), and automated unit and component testing.</li>\
+<li class='mb-2'><b>Continuous Integration (CI) tools support shift-left by automating tests and providing quick feedback on code changes:</b><br> CI helps catch issues early through fast feedback loops.</li>\
+<li class='mb-2'><b>Shift-left is embedded in Agile, DevOps, and modern iterative development approaches:</b><br> These methodologies promote early and continuous testing throughout the lifecycle.</li>\
+<li class='mb-2'><b>Challenges of shift-left include the need for upfront investment in tools, training, and cultural change:</b><br> Teams need preparation and buy-in to implement early testing effectively.</li>\
+<li class='mb-2'><b>Shift-left testing covers both functional and non-functional testing early on, such as performance and security testing at component levels:</b><br> Early evaluation ensures better quality and prevents late surprises.</li>\
+</ul>",
   correct: 1
 },
 {
@@ -393,6 +597,17 @@ export const QUESTIONS: Question[] = [
     ["Testing is only effective once all code has been written", "This contradicts shift-left’s goal of early testing."],
     ["Writing automated unit tests before coding aligns with shift-left", "This supports the shift-left methodology."]
   ],
+  keyPoints: "<h3 class='text-green-600'>Essential Key Points to Answer Shift-Left Testing Questions:</h3>\
+<ul>\
+<li class='mb-2'><b>Shift-left testing means starting testing activities earlier in the software development lifecycle:</b><br> This includes involvement from requirements, design, and coding phases rather than waiting until later stages.</li>\
+<li class='mb-2'><b>Early defect detection and prevention are the main goals:</b><br> Finding defects as soon as possible reduces cost and effort required to fix them.</li>\
+<li class='mb-2'><b>Shift-left encourages collaboration and involvement of all stakeholders:</b><br> Developers, testers, and business representatives work closely together early on.</li>\
+<li class='mb-2'><b>Common practices supporting shift-left include:</b><br> Static analysis, early reviews (requirements, design, user stories), test-driven development (TDD), behavior-driven development (BDD), and automated unit and component testing.</li>\
+<li class='mb-2'><b>Continuous Integration (CI) tools support shift-left by automating tests and providing quick feedback on code changes:</b><br> CI helps catch issues early through fast feedback loops.</li>\
+<li class='mb-2'><b>Shift-left is embedded in Agile, DevOps, and modern iterative development approaches:</b><br> These methodologies promote early and continuous testing throughout the lifecycle.</li>\
+<li class='mb-2'><b>Challenges of shift-left include the need for upfront investment in tools, training, and cultural change:</b><br> Teams need preparation and buy-in to implement early testing effectively.</li>\
+<li class='mb-2'><b>Shift-left testing covers both functional and non-functional testing early on, such as performance and security testing at component levels:</b><br> Early evaluation ensures better quality and prevents late surprises.</li>\
+</ul>",
   correct: 2
 }
 ];

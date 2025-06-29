@@ -4,11 +4,12 @@ interface GameOverProps {
   onRestart: () => void;
   score: number;
   totalQuestions: number;
-  wrongAnswers: [string, string[]][];
+  wrongAnswers: [string, string[], string][];
 }
 
 export default function GameOver({onRestart, score, totalQuestions, wrongAnswers}: GameOverProps) {
   const [selectedQA, setSelectedQA] = useState<[string, string, string] | null>(null);
+  const [selectedKeyPoints, setSelectedKeyPoints] = useState<string | null>(null);
 
   useEffect(() => {
     if (selectedQA) {
@@ -36,15 +37,20 @@ export default function GameOver({onRestart, score, totalQuestions, wrongAnswers
         <div className="mt-6 text-left max-w-xl mx-auto">
           <h3 className="text-lg font-semibold mb-4">Click to Review Incorrect Answers:</h3>
           <ul className="space-y-4">
-            {wrongAnswers.map(([question, userAnswer], idx) => (
+            {wrongAnswers.map(([question, userAnswer, keyPoints], idx) => (
               <li
                 key={idx}
-                className="border p-4 rounded-md bg-red-50 cursor-pointer hover:bg-red-100 transition"
-                onClick={() => setSelectedQA([question, userAnswer[0], userAnswer[1]])}
+                className="border p-4 rounded-md bg-red-50 hover:bg-red-100 transition"
               >
-                <p className="font-semibold">{question}</p>
-                <p>
-                  Your answer: <span className="text-red-600">{userAnswer[0]}</span>
+                <p><span className="font-semibold">Question:</span> {question}</p>
+                <p><span className="font-semibold">Your answer:</span> <span className="text-red-600 cursor-pointer" onClick={() => setSelectedQA([question, userAnswer[0], userAnswer[1]])}>{userAnswer[0]}</span></p>
+                <p className="mt-4 text-green-600 cursor-pointer"
+                onClick={() => {
+    console.log("Clicked keyPoints:", keyPoints);
+    setSelectedKeyPoints(keyPoints);
+  }}
+                >
+                  Essential Key Points to Answer This Question
                 </p>
               </li>
             ))}
@@ -69,6 +75,24 @@ export default function GameOver({onRestart, score, totalQuestions, wrongAnswers
             <button
               onClick={handleCloseModal}
               className="px-4 py-2 bg-gray-700 text-white rounded hover:bg-gray-800 cursor-pointer"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      )}
+
+      {/* Modal 2 */}
+      {selectedKeyPoints && (
+        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
+          <div className="bg-white rounded-lg p-6 w-full max-w-xl shadow-lg overflow-y-auto max-h-[80vh]">
+            <div
+              className="text-left space-y-4"
+              dangerouslySetInnerHTML={{ __html: selectedKeyPoints }}
+            />
+            <button
+              onClick={() => setSelectedKeyPoints(null)}
+              className="mt-6 px-4 py-2 bg-gray-700 text-white rounded hover:bg-gray-800 cursor-pointer"
             >
               Close
             </button>

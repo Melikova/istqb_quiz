@@ -7,4 +7,5 @@ export interface Question {
     correct: number;
     shuffledOptions?: string[][];
     correctIndexInShuffled?: number;
+    keyPoints: string;
 }
