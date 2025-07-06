@@ -9,4 +9,4 @@ export interface Question {
     shuffledOptions?: string[][];
     correctIndexInShuffled?: number;
     keyPoints: string;
-} 
+}
