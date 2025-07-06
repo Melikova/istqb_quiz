@@ -71,9 +71,13 @@ export const QUESTIONS: Question[] = [
       ["Running the same tests repeatedly will reduce the chance of finding new failures", "correct"]
     ],
     keyPoints: "<h3 class='text-green-600'>Essential Key Points to Answer This Question:</h3>\
-    <ul>\
-    <li class='mb-2'><b>SOON</li>\
-    </ul>",
+<ul>\
+<li class='mb-2'><b>The principle of tests wearing out means tests become less effective over time:</b><br> If the same set of test cases is run repeatedly without change, they are less likely to detect new defects.</li>\
+<li class='mb-2'><b>This happens because software evolves:</b><br> As new features are added and code changes, previously effective tests may not cover new risk areas.</li>\
+<li class='mb-2'><b>Running the same tests over and over can create a false sense of security:</b><br> Just because the tests pass repeatedly does not mean the software is free of defects.</li>\
+<li class='mb-2'><b>Refreshing or evolving the test set is essential:</b><br> Incorporating exploratory testing, updating test cases, and using risk-based testing strategies helps prevent tests from wearing out.</li>\
+<li class='mb-2'><b>Agile and modern development practices encourage continuous test maintenance:</b><br> Tests should be reviewed and updated regularly to remain relevant and effective.</li>\
+</ul>",
     correct: 3
   },
   {
@@ -88,9 +92,14 @@ export const QUESTIONS: Question[] = [
       ["During all the activities", "correct"]
     ],
     keyPoints: "<h3 class='text-green-600'>Essential Key Points to Answer This Question:</h3>\
-    <ul>\
-    <li class='mb-2'><b>SOON</li>\
-    </ul>",
+<ul>\
+<li class='mb-2'><b>Test control is an ongoing activity throughout the entire test process:</b><br> It involves taking corrective actions when actual progress deviates from planned progress.</li>\
+<li class='mb-2'><b>It starts during test planning:</b><br> Where baselines and criteria (like schedule, scope, and quality goals) are defined to measure progress against.</li>\
+<li class='mb-2'><b>During implementation and execution:</b><br> Control is used to adjust priorities, update test plans, and reallocate resources based on test results and issues discovered.</li>\
+<li class='mb-2'><b>During monitoring:</b><br> Control actions are triggered based on the data collected — such as slowing test progress or increasing defect rates.</li>\
+<li class='mb-2'><b>Test control supports achieving test objectives:</b><br> By ensuring the test process adapts to changes in risk, scope, or progress.</li>\
+</ul>"
+,
     correct: 3
   },
   {
@@ -105,9 +114,13 @@ export const QUESTIONS: Question[] = [
       ["Test control", "Control is the response activity that acts upon information gathered during monitoring, not the comparison itself."]
     ],
     keyPoints: "<h3 class='text-green-600'>Essential Key Points to Answer This Question:</h3>\
-    <ul>\
-    <li class='mb-2'><b>SOON</li>\
-    </ul>",
+<ul>\
+<li class='mb-2'><b>Test monitoring involves collecting and analyzing testing data:</b><br> It focuses on measuring progress and comparing it against the plan (e.g., number of test cases executed, pass/fail rates, defect metrics).</li>\
+<li class='mb-2'><b>The goal of monitoring is to understand current status:</b><br> By comparing planned progress with actual progress, teams can identify whether testing is on track.</li>\
+<li class='mb-2'><b>Monitoring supports decision-making:</b><br> The information gathered is used to decide whether corrective actions are needed, which is part of test control.</li>\
+<li class='mb-2'><b>Test planning happens before monitoring:</b><br> It sets the baseline (schedule, resources, scope, etc.) against which actual results will be compared during monitoring.</li>\
+<li class='mb-2'><b>Test closure occurs after testing is done:</b><br> It involves finalizing documentation, collecting metrics, and analyzing lessons learned—not monitoring progress.</li>\
+</ul>",
     correct: 0
   },
   {
@@ -122,9 +135,13 @@ export const QUESTIONS: Question[] = [
       ["Develop end-to-end test automation before performing manual testing so the automation can be used sooner", "Developing end-to-end automation takes a lot of time upfront and may not be feasible under strict time and budget constraints. Manual testing or lightweight techniques can deliver faster feedback."]
     ],
     keyPoints: "<h3 class='text-green-600'>Essential Key Points to Answer This Question:</h3>\
-    <ul>\
-    <li class='mb-2'><b>SOON</li>\
-    </ul>",
+<ul>\
+  <li class='mb-2'><b>Time and budget constraints require efficient testing approaches:</b><br> Instead of spending too much time on detailed test case development, faster techniques can provide quicker feedback.</li>\
+  <li class='mb-2'><b>Exploratory testing leverages tester experience:</b><br> It allows testers to dynamically adjust their focus and uncover defects that rigid test cases might miss.</li>\
+  <li class='mb-2'><b>Checklist testing provides structure without heavy documentation:</b><br> A checklist ensures key areas are covered while significantly reducing the time spent on writing detailed test cases.</li>\
+  <li class='mb-2'><b>Adapting the testing approach is crucial under constraints:</b><br> The objective is to reduce test case development time while still achieving sufficient test coverage to lower risk.</li>\
+  <li class='mb-2'><b>Balancing speed and quality:</b><br> Exploratory and checklist methods help maintain quality by focusing on high-impact areas even under limited time and budget.</li>\
+</ul>",
     correct: 1
   },
   {
@@ -150,9 +167,12 @@ export const QUESTIONS: Question[] = [
       ]
     ],
     keyPoints: "<h3 class='text-green-600'>Essential Key Points to Answer This Question:</h3>\
-    <ul>\
-    <li class='mb-2'><b>SOON</li>\
-    </ul>",
+<ul>\
+  <li class='mb-2'><b>Lack of objectivity is the main concern:</b><br> Developers may unintentionally overlook flaws in their own code due to cognitive bias and familiarity.</li>\
+  <li class='mb-2'><b>Independent testing improves defect detection:</b><br> Independent testers are more likely to question assumptions and explore edge cases that the developer might not consider.</li>\
+  <li class='mb-2'><b>Developer testing is useful but limited:</b><br> While developers can effectively perform unit tests, they may not critically challenge the overall logic and integration like a dedicated tester would.</li>\
+  <li class='mb-2'><b>Test objectivity is a key principle of quality assurance:</b><br> Objectivity leads to better risk identification and helps prevent confirmation bias in testing.</li>\
+</ul>",
     correct: 2
   },
   {
@@ -209,9 +229,14 @@ export const QUESTIONS: Question[] = [
       ]
     ],
     keyPoints: "<h3 class='text-green-600'>Essential Key Points to Answer This Question:</h3>\
-    <ul>\
-    <li class='mb-2'><b>SOON</li>\
-    </ul>",
+<ul>\
+  <li class='mb-2'><b>Non-functional testing evaluates attributes such as performance, security, usability, and reliability:</b><br> These characteristics are critical to overall system quality and user satisfaction.</li>\
+  <li class='mb-2'><b>Non-functional tests can be applied at multiple test levels:</b><br> While often associated with system and acceptance testing, they can also be done at unit and integration levels when applicable.</li>\
+  <li class='mb-2'><b>At the unit level:</b><br> Basic performance or resource usage tests might be performed on individual components.</li>\
+  <li class='mb-2'><b>At integration and system levels:</b><br> More comprehensive non-functional tests such as load, stress, and security tests are typical.</li>\
+  <li class='mb-2'><b>Acceptance level:</b><br> Non-functional requirements are verified to ensure the system meets business and user expectations.</li>\
+  <li class='mb-2'><b>Testing strategy should align non-functional tests with project goals and feasibility:</b><br> Not all levels require all non-functional tests, but testing can occur where it makes sense.</li>\
+</ul>",
     correct: 3
   },
   {
@@ -237,9 +262,13 @@ export const QUESTIONS: Question[] = [
       ]
     ],
     keyPoints: "<h3 class='text-green-600'>Essential Key Points to Answer This Question:</h3>\
-    <ul>\
-    <li class='mb-2'><b>SOON</li>\
-    </ul>",
+<ul>\
+  <li class='mb-2'><b>Early and frequent stakeholder feedback helps ensure the product meets stakeholder expectations:</b><br> This alignment reduces misunderstandings and costly rework later in the development process.</li>\
+  <li class='mb-2'><b>Feedback enables timely course corrections:</b><br> Identifying issues or changes early helps keep the project on track and improves overall quality.</li>\
+  <li class='mb-2'><b>Involving stakeholders throughout development fosters collaboration and shared ownership:</b><br> But the primary reason is ensuring their vision and requirements are realized in the product.</li>\
+  <li class='mb-2'><b>Using stakeholders as testers is secondary and not the main goal:</b><br> Their primary role is providing feedback, not formal testing.</li>\
+  <li class='mb-2'><b>More meetings are not a benefit:</b><br> Meetings should be purposeful and efficient, focused on productive feedback.</li>\
+</ul>",
     correct: 1
   },
   {
@@ -273,9 +302,12 @@ export const QUESTIONS: Question[] = [
     ["Fixing and reporting", "This phase happens after review findings are recorded and fixed."]
   ],
   keyPoints: "<h3 class='text-green-600'>Essential Key Points to Answer This Question:</h3>\
-    <ul>\
-    <li class='mb-2'><b>SOON</li>\
-    </ul>",
+<ul>\
+  <li class='mb-2'><b>Exit criteria in a formal review are defined during the planning phase:</b><br> This ensures clear goals and conditions for completion are set before the review starts.</li>\
+  <li class='mb-2'><b>Planning phase establishes scope, roles, schedules, and exit criteria:</b><br> Setting exit criteria early helps measure review effectiveness and completion.</li>\
+  <li class='mb-2'><b>Subsequent phases (initiation, individual review, fixing) rely on these predefined exit criteria:</b><br> They guide when the review process can be considered complete.</li>\
+  <li class='mb-2'><b>Defining exit criteria late in the process can cause confusion and inefficiency:</b><br> Early definition aligns stakeholder expectations and improves review quality.</li>\
+</ul>",
   correct: 0
 },
 {
@@ -289,9 +321,12 @@ export const QUESTIONS: Question[] = [
     ["It is supported by strong tools and can be automated", "Experience-based testing is typically manual and informal."]
   ],
   keyPoints: "<h3 class='text-green-600'>Essential Key Points to Answer This Question:</h3>\
-    <ul>\
-    <li class='mb-2'><b>SOON</li>\
-    </ul>",
+<ul>\
+  <li class='mb-2'><b>Experience-based testing leverages tester skill and intuition:</b><br> It helps find defects that formal techniques might miss, especially edge cases and unexpected behaviors.</li>\
+  <li class='mb-2'><b>This approach is informal and exploratory:</b><br> It relies on tester knowledge rather than predefined test cases or automation tools.</li>\
+  <li class='mb-2'><b>Experience-based testing complements formal testing:</b><br> It provides additional defect detection coverage and flexibility.</li>\
+  <li class='mb-2'><b>It is particularly useful when requirements are incomplete or evolving:</b><br> Skilled testers can adapt and explore areas that may not be covered by formal tests.</li>\
+</ul>",
   correct: 0
 },
 {
@@ -305,9 +340,12 @@ export const QUESTIONS: Question[] = [
     ["A planning technique used to anticipate likely schedule variances due to faults", "This relates to project planning, not error guessing."]
   ],
   keyPoints: "<h3 class='text-green-600'>Essential Key Points to Answer This Question:</h3>\
-    <ul>\
-    <li class='mb-2'><b>SOON</li>\
-    </ul>",
+<ul>\
+  <li class='mb-2'><b>Error guessing is an experience-based testing technique:</b><br> Testers use their domain knowledge, past experience, and intuition to guess likely areas where defects may exist.</li>\
+  <li class='mb-2'><b>There are no formal rules or structure in error guessing:</b><br> It is informal and flexible, allowing testers to create test cases based on anticipated errors.</li>\
+  <li class='mb-2'><b>Common targets include:</b><br> Edge cases, input validation, integration points, and areas of the application known to be error-prone or historically defective.</li>\
+  <li class='mb-2'><b>Error guessing is often used in conjunction with other test techniques:</b><br> It helps increase test coverage by supplementing formal test design techniques.</li>\
+</ul>",
   correct: 0
 },
 {
@@ -340,9 +378,12 @@ export const QUESTIONS: Question[] = [
     ["Priority low, severity high", "The defect causes a crash (high severity), but it's rare (low priority)."]
   ],
   keyPoints: "<h3 class='text-green-600'>Essential Key Points to Answer This Question:</h3>\
-    <ul>\
-    <li class='mb-2'><b>SOON</li>\
-    </ul>",
+<ul>\
+  <li class='mb-2'><b>Severity refers to the impact of the defect on the system:</b><br> A system crash is considered high severity regardless of how frequently it occurs because it disrupts critical functionality.</li>\
+  <li class='mb-2'><b>Priority reflects the urgency to fix the defect:</b><br> A rare issue that occurs only in unusual scenarios (like voiding 10 purchases in a row) may not need to be fixed immediately, hence low priority.</li>\
+  <li class='mb-2'><b>Testers usually assess severity, while stakeholders (like product owners or project managers) determine priority:</b><br> Based on business impact and release goals.</li>\
+  <li class='mb-2'><b>High severity + low priority is a valid combination:</b><br> Critical defects that rarely happen or have minimal business impact can be deferred but must be documented and monitored.</li>\
+</ul>",
   correct: 3
 },
 {
@@ -356,9 +397,13 @@ export const QUESTIONS: Question[] = [
     ["Test implementation is faster", "Implementing automated tests can initially take more time."]
   ],
   keyPoints: "<h3 class='text-green-600'>Essential Key Points to Answer This Question:</h3>\
-    <ul>\
-    <li class='mb-2'><b>SOON</li>\
-    </ul>",
+<ul>\
+  <li class='mb-2'><b>Test automation significantly increases execution speed:</b><br> Automated tests can run faster than manual tests, especially when repeated across builds and environments.</li>\
+  <li class='mb-2'><b>Automation enables frequent and consistent test runs:</b><br> Useful in continuous integration (CI) pipelines where tests must run after each code change or deployment.</li>\
+  <li class='mb-2'><b>Manual testing is not obsolete:</b><br> Some areas, like usability, exploratory, and ad hoc testing, still require human intuition and cannot be fully automated.</li>\
+  <li class='mb-2'><b>ROI from automation takes time:</b><br> Initial development of automated tests requires investment, but long-term efficiency improves as the test suite grows.</li>\
+  <li class='mb-2'><b>Automation helps reduce human error:</b><br> Scripts perform tasks consistently and don't get tired or distracted like manual testers might.</li>\
+</ul>",
   correct: 0
 },
 {
@@ -372,9 +417,13 @@ export const QUESTIONS: Question[] = [
     ["Change-related", "Usability is not related to change-related testing."]
   ],
   keyPoints: "<h3 class='text-green-600'>Essential Key Points to Answer This Question:</h3>\
-    <ul>\
-    <li class='mb-2'><b>SOON</li>\
-    </ul>",
+<ul>\
+  <li class='mb-2'><b>Usability testing evaluates how easy and intuitive a system is to use:</b><br> It measures aspects such as user satisfaction, efficiency, learnability, and error frequency.</li>\
+  <li class='mb-2'><b>It is a type of non-functional testing:</b><br> Non-functional tests evaluate how well a system performs rather than what it does.</li>\
+  <li class='mb-2'><b>Usability is one of the key non-functional quality characteristics:</b><br> Alongside performance, reliability, security, maintainability, and portability.</li>\
+  <li class='mb-2'><b>Functional testing checks system behavior against requirements:</b><br> While usability focuses on the user's interaction and perception of the system.</li>\
+  <li class='mb-2'><b>Usability testing is often performed with end users:</b><br> Observing them as they complete tasks helps identify design flaws and user experience issues.</li>\
+</ul>",
   correct: 1
 },
 {
@@ -388,9 +437,13 @@ export const QUESTIONS: Question[] = [
     ["White-box, because we need to know the internal structure of the program to measure the order processing time", "White-box refers to testing code logic; this scenario is black-box."]
   ],
   keyPoints: "<h3 class='text-green-600'>Essential Key Points to Answer This Question:</h3>\
-    <ul>\
-    <li class='mb-2'><b>SOON</li>\
-    </ul>",
+<ul>\
+  <li class='mb-2'><b>Non-functional testing verifies system attributes like performance, usability, and reliability:</b><br> These tests assess *how well* the system performs, not *what* it does.</li>\
+  <li class='mb-2'><b>Performance testing is a key type of non-functional testing:</b><br> It measures responsiveness, stability, and speed under specific conditions.</li>\
+  <li class='mb-2'><b>The requirement 'processed in less than 10 seconds in 95% of cases' is a performance metric:</b><br> It sets a measurable threshold for acceptable system behavior under load.</li>\
+  <li class='mb-2'><b>Functional tests check whether features work as expected:</b><br> For example, whether a user can place an order. Performance of that feature is a separate concern.</li>\
+  <li class='mb-2'><b>This testing does not require knowledge of internal code structure:</b><br> It can be performed as black-box testing using timers and logs to verify response time.</li>\
+</ul>",
   correct: 1
 },
 {
@@ -640,5 +693,253 @@ export const QUESTIONS: Question[] = [
 <li class='mb-2'><b>Shift-left testing covers both functional and non-functional testing early on, such as performance and security testing at component levels:</b><br> Early evaluation ensures better quality and prevents late surprises.</li>\
 </ul>",
   correct: 2
+},
+{
+  id:32,
+  topicId: "what-is-testing",
+  question: "Which of the following statements describe a valid test objective?",
+  options: [
+    ["To prove that there are no unfixed defects in the system under test", "It is impossible to prove that there are no defects anymore in the system under test."],
+    ["To prove that there will be no failures after the implementation of the system into production", "it's impossible to prove the absence of all future failures in any complex software system. Even with extensive testing, unknown edge cases, environmental differences, user behavior, or integration issues can still lead to failures after deployment."],
+    ["To reduce the risk level of the test object and to build confidence in the quality level", "Testing finds defects and failures which reduces the level of risk and at the same time gives more confidence in the quality level of the test object"],
+    ["To verify that there are no untested combinations of inputs", "It is impossible to test all combinations of inputs"]
+  ],
+  keyPoints: "<h3 class='text-green-600'>Essential Key Points to Answer This Question:</h3>\
+<ul>\
+<li class='mb-2'><b>Testing helps reduce product risk:</b><br> By identifying defects early, testing lowers the chances of failure in production.</li>\
+<li class='mb-2'><b>Testing builds confidence in quality:</b><br> Consistent testing across components and stages assures stakeholders that the system behaves as expected.</li>\
+<li class='mb-2'><b>A valid objective is not to prove the system is defect-free:</b><br> Testing can reveal defects but cannot guarantee the absence of all defects or future failures.</li>\
+<li class='mb-2'><b>Complete input coverage is impractical:</b><br> Due to the near-infinite combinations, exhaustive testing isn't feasible—risk-based and focused testing is key.</li>\
+<li class='mb-2'><b>ISTQB Foundation Level defines test objectives as:</b><br> Gaining confidence, providing information for decision-making, preventing defects, and reducing risk—not proving perfection.</li>\
+</ul>",
+  correct: 2
+},
+{
+  id:33,
+  topicId: "sdlc",
+  question: "When coding is directed by the test cases, what development approach is being used?",
+  options: [
+    ["TDD", "correct"],
+    ["BDD", "BDD focuses on defining system behavior in a natural language format understandable by all stakeholders (e.g., using Gherkin syntax). It emphasizes collaboration between developers, testers, and business people to create shared understanding before coding. Unlike TDD, BDD drives development through behavior specifications rather than low-level test cases."],
+    ["ATDD", "ATDD is about writing acceptance tests collaboratively before development starts, involving testers, developers, and business representatives. It focuses on capturing acceptance criteria to guide development and ensure the product meets business requirements. ATDD tests tend to be higher-level acceptance tests, not the unit-level tests that drive coding in TDD."],
+    ["TBD", "This is not a standard or recognized development approach. It might be a distractor or typo. The commonly known approaches are TDD, BDD, and ATDD."]
+  ],
+  keyPoints: "<h3 class='text-green-600'>Essential Key Points to Answer This Question:</h3>\
+<ul>\
+  <li class='mb-2'><b>Test-Driven Development (TDD) is a development approach where:</b><br> Developers write automated test cases before writing the code that fulfills those tests.</li>\
+  <li class='mb-2'><b>TDD cycle:</b><br> Red (write a failing test) → Green (write just enough code to pass) → Refactor (clean up the code while keeping tests green).</li>\
+  <li class='mb-2'><b>TDD helps ensure code meets requirements from the start:</b><br> By focusing on test cases first, developers think about behavior and edge cases early.</li>\
+  <li class='mb-2'><b>TDD is different from BDD and ATDD:</b><br> BDD focuses on behavior described in natural language, and ATDD involves collaboration between testers, developers, and business analysts to write acceptance tests before development.</li>\
+  <li class='mb-2'><b>Benefits of TDD:</b><br> Better design, fewer bugs, faster feedback, and improved test coverage.</li>\
+</ul>",
+  correct: 0
+},
+{
+  id:34,
+  topicId: "maintenance",
+  question: "When a system is targeted for decommissioning, what type of maintenance testing may be required?",
+  options: [
+    ["Retirement testing", "There is no such testing type"],
+    ["Regression testing", "This is more appropriate for current systems, not the system being retired"],
+    ["Data migration testing", "correct"],
+    ["Patch testing", "This is of no use for a system being retired"]
+  ],
+  keyPoints: "<h3 class='text-green-600'>Essential Key Points to Answer This Question:</h3>\
+<ul>\
+  <li class='mb-2'><b>Maintenance testing includes activities performed on a system after its initial release:</b><br> This ensures continued operation, bug fixes, and smooth transition phases like decommissioning.</li>\
+  <li class='mb-2'><b>Decommissioning a system often involves data migration testing:</b><br> Testing verifies that all critical data is accurately and completely transferred to a new system or archive without loss or corruption.</li>\
+  <li class='mb-2'><b>Regression testing is typically applied to active systems:</b><br> It ensures that recent changes haven't broken existing functionality, less relevant when the system is retiring.</li>\
+  <li class='mb-2'><b>Patch testing focuses on verifying fixes or updates:</b><br> Usually irrelevant during system retirement, unless patching is still performed.</li>\
+  <li class='mb-2'><b>Retirement testing is not a recognized formal testing type:</b><br> The appropriate testing is focused on ensuring a smooth transition, primarily through data migration validation.</li>\
+</ul>",
+  correct: 2
+},
+{
+  "id": 35,
+  "topicId": "testing-skills-practices",
+  "question": "Which of the following is an example of a good testing practice?",
+  "options": [
+    [
+      "Different test levels should have specific test objectives",
+      "Correct. Each test level should have its own clear objectives to ensure effective and targeted testing."
+    ],
+    [
+      "Testers should have development experience",
+      "While development experience can help, it is not a prerequisite or a defining good practice for testers."
+    ],
+    [
+      "Developers should determine the order of test execution in the test procedures",
+      "Test execution order is usually decided by testers or test leads to optimize test effectiveness, not solely by developers."
+    ],
+    [
+      "Test design should begin when the code is complete to avoid changes",
+      "This is not a good practice; test design should start early and evolve, often alongside development."
+    ]
+  ],
+  "keyPoints": "<h3 class='text-green-600'>Essential Key Points to Answer This Question:</h3>\
+<ul>\
+  <li class='mb-2'><b>Good testing practices include defining specific objectives for each test level:</b><br> This helps focus testing efforts and improves defect detection.</li>\
+  <li class='mb-2'><b>Testers don’t need to be developers but should have good analytical and communication skills:</b><br> Collaboration with developers is important, but development experience is not mandatory.</li>\
+  <li class='mb-2'><b>Test execution order should be planned by testers based on risk, priority, and coverage:</b><br> It ensures efficient use of testing resources.</li>\
+  <li class='mb-2'><b>Test design should ideally start early in the development lifecycle:</b><br> Early design allows for early defect detection and better test coverage.</li>\
+</ul>",
+  "correct": 0
+},
+{
+  "id": 36,
+  "topicId": "testing-skills-practices",
+  "question": "You are working with a junior tester who has been given a user story to test. They have created only one positive path test for the story. You know there are more areas that should be tested for this story, including negative scenarios. Which of the following generic skills do they appear to be lacking?",
+  "options": [
+    [
+      "Communication",
+      "Communication is important for sharing information but is not the main skill lacking when negative scenarios are missed."
+    ],
+    [
+      "Curiosity",
+      "Correct. Curiosity drives testers to explore beyond the obvious, including negative and edge cases."
+    ],
+    [
+      "Confidence",
+      "Confidence affects tester assertiveness but doesn’t directly explain missing negative test scenarios."
+    ],
+    [
+      "Creativity",
+      "Creativity helps design tests but curiosity is more fundamental in exploring unknown test areas."
+    ]
+  ],
+  "keyPoints": "<h3 class='text-green-600'>Essential Key Points to Answer This Question:</h3>\
+<ul>\
+  <li class='mb-2'><b>Curiosity is a key generic skill for testers:</b><br> It motivates exploring beyond happy paths to uncover hidden defects.</li>\
+  <li class='mb-2'><b>Testers need to consider both positive and negative scenarios:</b><br> This ensures comprehensive coverage of potential system behaviors.</li>\
+  <li class='mb-2'><b>Lack of curiosity may result in insufficient test coverage:</b><br> Testing only positive paths misses many possible failure modes.</li>\
+  <li class='mb-2'><b>Communication, confidence, and creativity are important but secondary skills in this context:</b><br> The core issue here is the tester's limited exploratory mindset.</li>\
+</ul>",
+  "correct": 1
+},
+{
+  "id": 37,
+  "topicId": "what-is-testing",
+  "question": "Which of the following is an example of debugging?",
+  "options": [
+    [
+      "A tester finds a defect and reports it",
+      "This is defect detection and reporting, not debugging."
+    ],
+    [
+      "A tester retests a fix from the developer and finds a regression",
+      "This is regression testing, not debugging."
+    ],
+    [
+      "A developer finds and fixes a defect",
+      "Correct. Debugging is the process of identifying, analyzing, and fixing defects in the code."
+    ],
+    [
+      "A developer performs unit testing",
+      "Unit testing is a testing activity, which may help find defects, but debugging specifically involves fixing the defects."
+    ]
+  ],
+  "keyPoints": "<h3 class='text-green-600'>Essential Key Points to Answer This Question:</h3>\
+<ul>\
+  <li class='mb-2'><b>Debugging involves locating, analyzing, and fixing defects in the code:</b><br> Typically performed by developers.</li>\
+  <li class='mb-2'><b>Testing activities such as finding and reporting defects or retesting fixes are not debugging:</b><br> They help identify problems but do not fix them.</li>\
+  <li class='mb-2'><b>Unit testing is a test level, not debugging itself:</b><br> It may help find defects but debugging is the corrective action.</li>\
+</ul>",
+  "correct": 2
+},
+{
+  "id": 38,
+  "topicId": "testing-principles",
+  "question": "Which of the following is a true statement about exhaustive testing?",
+  "options": [
+    [
+      "It is a form of stress testing",
+      "Incorrect. Exhaustive testing means testing all possible inputs and paths, not specifically stress testing."
+    ],
+    [
+      "It is not feasible except in the case of trivial software",
+      "Correct. Due to the extremely large number of input combinations, exhaustive testing is usually impractical except for very simple programs."
+    ],
+    [
+      "It is commonly done with test automation",
+      "Incorrect. Although automation helps, exhaustive testing is rarely done because of the vast number of cases."
+    ],
+    [
+      "It is normally the responsibility of the developer during unit testing",
+      "Incorrect. While developers do unit testing, exhaustive testing is generally not feasible even at unit test level."
+    ]
+  ],
+  "keyPoints": "<h3 class='text-green-600'>Essential Key Points to Answer This Question:</h3>\
+<ul>\
+  <li class='mb-2'><b>Exhaustive testing means attempting to test all possible input combinations and execution paths.</b></li>\
+  <li class='mb-2'><b>It is practically infeasible for anything but trivial or very small software due to combinatorial explosion.</b></li>\
+  <li class='mb-2'><b>Because exhaustive testing is not feasible, testers rely on risk-based and selective testing techniques.</b></li>\
+  <li class='mb-2'><b>Test automation can speed up testing but does not make exhaustive testing practical.</b></li>\
+  <li class='mb-2'><b>Unit testing by developers focuses on meaningful coverage rather than exhaustive cases.</b></li>\
+</ul>",
+  "correct": 1
+},
+{
+  "id": 39,
+  "topicId": "test-planning",
+  "question": "Who normally writes the test plan for a project?",
+  "options": [
+    [
+      "The project manager",
+      "Usually involved in project oversight but not directly responsible for the test plan."
+    ],
+    [
+      "The product owner",
+      "Responsible for requirements and prioritization, not typically writing test plans."
+    ],
+    [
+      "The test manager",
+      "Correct. The test manager or lead typically creates and maintains the test plan."
+    ],
+    [
+      "The tester",
+      "Testers execute tests and may contribute details but do not usually write the overall test plan."
+    ]
+  ],
+  "keyPoints": "<h3 class='text-green-600'>Essential Key Points to Answer This Question:</h3>\
+<ul>\
+  <li class='mb-2'><b>The test plan is a formal document outlining testing scope, approach, resources, schedule, and deliverables.</b></li>\
+  <li class='mb-2'><b>The test manager or test lead is typically responsible for writing and maintaining the test plan.</b></li>\
+  <li class='mb-2'><b>Project managers oversee the project but don’t usually handle detailed test planning.</b></li>\
+  <li class='mb-2'><b>Product owners focus on requirements and priorities, not on test documentation.</b></li>\
+  <li class='mb-2'><b>Testers primarily execute tests and report results; they may provide input but don’t usually write the full plan.</b></li>\
+</ul>",
+  "correct": 2
+},
+{
+  "id": 40,
+  "topicId": "test-levels",
+  "question": "You have been receiving daily builds from the developers. Even though they are documenting the fixes they are including in each build, you are finding that the fixes either aren’t in the build or are not working. What type of testing is best suited for finding these issues?",
+  "options": [
+    [
+      "Unit testing",
+      "Unit testing focuses on individual components by developers and is not primarily responsible for verifying integrated fixes in builds."
+    ],
+    [
+      "System testing",
+      "System testing verifies the entire system but may be too broad to specifically catch missing or faulty fixes early."
+    ],
+    [
+      "Confirmation testing",
+      "Correct. Confirmation testing (also called retesting) verifies that specific defects have been fixed and that the fix works as intended."
+    ],
+    [
+      "Regression testing",
+      "Regression testing checks that recent changes haven’t broken existing functionality, but may not focus specifically on verifying fixes themselves."
+    ]
+  ],
+  "keyPoints": "<h3 class='text-green-600'>Essential Key Points to Answer This Question:</h3>\
+<ul>\
+  <li class='mb-2'><b>Confirmation testing (retesting) specifically verifies that defects reported earlier are fixed correctly.</b></li>\
+  <li class='mb-2'><b>Unit testing targets code at the component level, mostly done by developers before builds are delivered.</b></li>\
+  <li class='mb-2'><b>System testing verifies the entire integrated system but may not focus narrowly on specific fixes.</b></li>\
+  <li class='mb-2'><b>Regression testing ensures that recent changes haven't introduced new defects but is broader than confirmation testing.</b></li>\
+  <li class='mb-2'><b>Daily builds require frequent confirmation testing to ensure fixes are correctly included and functional.</b></li>\
+</ul>",
+  "correct": 2
 }
 ];
