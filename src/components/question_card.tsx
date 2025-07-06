@@ -16,7 +16,7 @@ export default function QuestionCard({
   selectedAnswer,
   totalQuestions,
   currentQuestion,
-  onExitQuiz, // ✅ Destructure the new prop
+  onExitQuiz, 
 }: QuestionCardProps) {
 
   const getButtonClass = (index: number): string => {
