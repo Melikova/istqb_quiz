@@ -3,6 +3,7 @@ import type { Question } from "../types/quizz";
 export const QUESTIONS: Question[] = [
   {
     id: 1, 
+    topicId: "what-is-testing",
     question:
       "When the tester verifies the test basis while designing tests early in the lifecycle, which test objective is being achieved?",
     options: [
@@ -23,6 +24,7 @@ export const QUESTIONS: Question[] = [
   },
   {
     id: 2, 
+    topicId: "testing-skills-practices",
     question:
       "In some Agile teams, people are encouraged to use their skills to help the team, regardless of their role. This could mean that testers help the developers write code and developers help testers test. What is this approach called?",
     options: [
@@ -41,6 +43,7 @@ export const QUESTIONS: Question[] = [
   },
   {
     id: 3, 
+    topicId: "why-testing-necessary",
     question: "Which of the following is a correct statement?",
     options: [
       ["A developer makes a mistake which causes a defect that may be seen as a failure during dynamic testing", "correct"],
@@ -59,6 +62,7 @@ export const QUESTIONS: Question[] = [
   },
   {
     id:4,
+    topicId: "testing-principles",
     question: "Why is it important to avoid the principle of tests wearing out?",
     options: [
       ["Dynamic testing is less reliable in finding bugs", "Dynamic testing (i.e., testing by running the software) is very effective at finding bugs. This option is a false generalization and not related to the idea of tests wearing out."],
@@ -74,6 +78,7 @@ export const QUESTIONS: Question[] = [
   },
   {
     id:5,
+    topicId: "test-activities-roles",
     question:
       "When following a standard test process, when should the test control activity take place?",
     options: [
@@ -90,6 +95,7 @@ export const QUESTIONS: Question[] = [
   },
   {
     id:6,
+    topicId: "test-activities-roles",
     question:
       "Which of the following is the activity that compares the planned test progress to the actual test progress?",
     options: [
@@ -106,6 +112,7 @@ export const QUESTIONS: Question[] = [
   },
   {
     id:7,
+    topicId: "testing-principles",
     question:
       "If you are working on a project that is constrained by time and budget, which is pressuring testing to be done quickly. How should the test approach be adjusted?",
     options: [
@@ -122,6 +129,7 @@ export const QUESTIONS: Question[] = [
   },
   {
     id:8,
+    topicId: "testing-skills-practices",
     question: "What is the biggest problem with a developer testing his own code?",
     options: [
       [
@@ -149,6 +157,7 @@ export const QUESTIONS: Question[] = [
   },
   {
     id: 9,
+    topicId: "testing-skills-practices",
     question: "Which of the following is an example of a good testing practice?",
     options: [
       [
@@ -179,6 +188,7 @@ export const QUESTIONS: Question[] = [
   },
   {
     id:10,
+    topicId: "test-levels",
     question: "During which level(s) of testing should non-functional tests be executed?",
     options: [
       [
@@ -206,6 +216,7 @@ export const QUESTIONS: Question[] = [
   },
   {
     id: 11,
+    topicId: "feedback-review",
     question: "What is the primary reason to get early and frequent feedback from stakeholders regarding a product being developed?",
     options: [
       [
@@ -233,6 +244,7 @@ export const QUESTIONS: Question[] = [
   },
   {
   id:12,
+  topicId: "static-testing",
   question: "Which of the following is a benefit of static analysis?",
   options: [
     ["Defects can be identified that might not be caught by dynamic testing", "Static analysis can detect issues before the code is executed."],
@@ -252,6 +264,7 @@ export const QUESTIONS: Question[] = [
 },
 {
   id:13,
+  topicId: "feedback-review",
   question: "For a formal review, at what point in the process are the exit criteria defined?",
   options: [
     ["Planning", "Exit criteria are defined during the planning phase of a formal review."],
@@ -267,6 +280,7 @@ export const QUESTIONS: Question[] = [
 },
 {
   id:14,
+  topicId: "experience-based",
   question: "Which of the following is a good reason to use experience-based testing?",
   options: [
     ["You can find defects that might be missed by more formal techniques", "Experience-based techniques often reveal edge cases and unexpected behaviors."],
@@ -282,6 +296,7 @@ export const QUESTIONS: Question[] = [
 },
 {
   id:15,
+  topicId: "experience-based",
   question: "What is error guessing?",
   options: [
     ["A testing technique used to guess where a developer is likely to have made a mistake", "This technique relies on the tester's intuition and experience to predict where defects may be."],
@@ -297,6 +312,7 @@ export const QUESTIONS: Question[] = [
 },
 {
   id:16,
+  topicId: "test-planning",
   question: "You are working in a team of testers who are all writing test cases. You have noticed that there is a significant inconsistency with the length and amount of detail in the different test cases. Where should the criteria for test case writing be documented?",
   options: [
     ["The test plan", "The test plan typically includes standards and criteria for how test cases should be written."],
@@ -315,6 +331,7 @@ export const QUESTIONS: Question[] = [
 },
 {
   id:17,
+  topicId: "defect-management",
   question: "You have been testing software that will be used to track credit card purchases. You have found a defect that causes the system to crash, but only if a person has made and voided 10 purchases in a row. What is the proper priority and severity rating for this defect?",
   options: [
     ["Priority high, severity high", "A crash is severe, but the situation is rare, so high priority may not apply."],
@@ -330,6 +347,7 @@ export const QUESTIONS: Question[] = [
 },
 {
   id:18,
+  topicId: "test-automation",
   question: "Which of the following is a benefit of test automation?",
   options: [
     ["Test execution is faster", "Automation enables tests to run more quickly and frequently."],
@@ -345,6 +363,7 @@ export const QUESTIONS: Question[] = [
 },
 {
   id:19,
+  topicId: "test-levels",
   question: "Usability testing is an example of which type of testing?",
   options: [
     ["Functional", "Functional testing focuses on what the system does, not usability."],
@@ -360,6 +379,7 @@ export const QUESTIONS: Question[] = [
 },
 {
   id:20,
+  topicId: "test-levels",
   question: "You work as a tester on a project on a mobile application for food ordering for one of your clients. The client sent you a list of requirements. One of them, with high priority, says “The order must be processed in less than 10 seconds in 95% of the cases”. You created a set of test cases in which a number of random orders were made, the processing time measured, and the test results were checked against the requirements. What test type did you perform?",
   options: [
     ["Functional, because the test cases cover the user’s business requirement for the system", "The requirement relates to performance, which is non-functional."],
@@ -375,6 +395,7 @@ export const QUESTIONS: Question[] = [
 },
 {
   id:21,
+  topicId: "experience-based",
   question: "Which of the following BEST fits as an element of the checklist used in checklist-based testing?",
   options: [
     ["The developer made an error when implementing the code", "This is a cause, not a checklist item."],
@@ -392,6 +413,7 @@ export const QUESTIONS: Question[] = [
 },
 {
   id:22,
+  topicId: "sdlc",
   question: "What is the key objective of the shift-left testing approach?",
   options: [
     ["To perform acceptance testing earlier in the development cycle", "Acceptance testing is not the only focus of shift-left."],
@@ -414,6 +436,7 @@ export const QUESTIONS: Question[] = [
 },
 {
   id:23,
+  topicId: "sdlc",
   question: "Which practice best illustrates the shift-left principle?",
   options: [
     ["Reviewing the specification for defects before development begins", "Early review and feedback help prevent defects, supporting shift-left."],
@@ -436,6 +459,7 @@ export const QUESTIONS: Question[] = [
 },
 {
   id:24,
+  topicId: "sdlc",
   question: "Which development approaches inherently apply shift-left testing?",
   options: [
     ["Waterfall and V-Model", "These are more traditional and often shift testing to later stages."],
@@ -458,6 +482,7 @@ export const QUESTIONS: Question[] = [
 },
 {
   id:25,
+  topicId: "sdlc",
   question: "Why is stakeholder buy-in important for shift-left testing?",
   options: [
     ["It guarantees code coverage of 100%", "Code coverage is a technical metric and not guaranteed by stakeholder support."],
@@ -480,6 +505,7 @@ export const QUESTIONS: Question[] = [
 },
 {
   id:26,
+  topicId: "sdlc",
   question: "Which of the following is NOT an example of shift-left testing?",
   options: [
     ["Static analysis of source code during development", "This is a classic example of early testing."],
@@ -502,6 +528,7 @@ export const QUESTIONS: Question[] = [
 },
 {
   id:27,
+  topicId: "sdlc",
   question: "How does CI (Continuous Integration) enable shift-left testing?",
   options: [
     ["By delaying testing until deployment", "This contradicts the concept of CI and shift-left."],
@@ -524,6 +551,7 @@ export const QUESTIONS: Question[] = [
 },
 {
   id:28,
+  topicId: "sdlc",
   question: "Which is a challenge often associated with shift-left testing?",
   options: [
     ["Requires upfront investment in training and tools", "Adopting shift-left involves early planning, tools, and training investment."],
@@ -546,6 +574,7 @@ export const QUESTIONS: Question[] = [
 },
 {
   id:29,
+  topicId: "sdlc",
   question: "What does shift-left encourage with respect to test case design?",
   options: [
     ["Write test cases only after the code is fully tested", "This is too late and not in line with shift-left."],
@@ -568,6 +597,7 @@ export const QUESTIONS: Question[] = [
 },
 {
   id:30,
+  topicId: "sdlc",
   question: "Which testing activity supports shift-left in non-functional testing?",
   options: [
     ["Executing performance tests only in staging", "Staging is too late for shift-left."],
@@ -590,6 +620,7 @@ export const QUESTIONS: Question[] = [
 },
 {
   id:31,
+  topicId: "sdlc",
   question: "Which statement reflects a misunderstanding of shift-left testing?",
   options: [
     ["Testing should begin as early as the requirements phase", "This is aligned with shift-left principles."],

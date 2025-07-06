@@ -34,7 +34,7 @@ export default function GameOver({onRestart, score, totalQuestions, wrongAnswers
       </p>
 
       {wrongAnswers.length > 0 && (
-        <div className="mt-6 text-left max-w-xl mx-auto">
+        <div className="mt-6 text-left mx-auto">
           <h3 className="text-lg font-semibold mb-4">Click to Review Incorrect Answers:</h3>
           <ul className="space-y-4">
             {wrongAnswers.map(([question, userAnswer, keyPoints], idx) => (

@@ -3,20 +3,21 @@ import Navbar from "./components/navbar";
 import GameOver from "./components/game_over";
 import QuestionCard from "./components/question_card";
 import StartScreen from "./components/start_screen";
+import QuizEntry from "./components/quiz_entry";
 import type { GameState } from "./types/quizz";
 import { QUESTIONS } from "./data/questions";
 import Timer from "./components/timer";
 import { shuffleArray } from "./utils/shuffle";
 
 function App() {
-  const [gameState, setGameState] = useState<GameState>("start");
+  const [gameState, setGameState] = useState<GameState>("entry");
+  const [selectedTopicId, setSelectedTopicId] = useState<string | null>(null);
   const [score, setScore] = useState<number>(0);
   const [currentQuestion, setCurrentQuestion] = useState<number>(0);
   const [selectedAnswer, setSelectedAnswer] = useState<number | null>(null);
   const [timeLeft, setTimeLeft] = useState<number>(600);
   const [shuffledQuestions, setShuffledQuestions] = useState<typeof QUESTIONS>([]);
   const [wrongAnswers, setWrongAnswers] = useState<[string, string[], string][]>([]);
-
 
   useEffect(() => {
     let timer: ReturnType<typeof setInterval>;
@@ -31,7 +32,13 @@ function App() {
   }, [timeLeft, gameState]);
 
   const handleStart = () => {
-    const shuffled = shuffleArray(QUESTIONS).slice(0, 10).map((q) => {
+  if (!selectedTopicId) return;
+
+  const topicQuestions = QUESTIONS.filter(q => q.topicId === selectedTopicId);
+
+  const shuffled = shuffleArray(topicQuestions)
+    .slice(0, 10)
+    .map((q) => {
       const shuffledOptions = shuffleArray(q.options);
       return {
         ...q,
@@ -40,14 +47,14 @@ function App() {
       };
     });
 
-    setShuffledQuestions(shuffled);
-    setGameState("playing");
-    setTimeLeft(600);
-    setScore(0);
-    setCurrentQuestion(0);
-    setSelectedAnswer(null);
-    setWrongAnswers([]);
-  };
+  setShuffledQuestions(shuffled);
+  setGameState("playing");
+  setTimeLeft(600);
+  setScore(0);
+  setCurrentQuestion(0);
+  setSelectedAnswer(null);
+  setWrongAnswers([]);
+};
 
   const handleAnswer = (index: number): void => {
     setSelectedAnswer(index);
@@ -61,10 +68,10 @@ function App() {
 
     if (isCorrect) {
       setScore((prev) => prev + 1);
-    }else {
+    } else {
       setWrongAnswers((prev) => [
         ...prev,
-        [currentQ.question, userAnswer, currentQ.keyPoints]
+        [currentQ.question, userAnswer, currentQ.keyPoints],
       ]);
     }
 
@@ -80,10 +87,25 @@ function App() {
 
   return (
     <div className="min-h-screen flex flex-col">
-      <Navbar />          
+      <Navbar />
       <main className="flex-grow bg-gray-50 py-12 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-4xl mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-4xl">
-          {gameState === "start" && <StartScreen onStart={handleStart} />}
+        {/* <div className="max-w-4xl mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-4xl"> */}
+          {gameState === "entry" && (
+            <QuizEntry
+              onSelectTopic={(topic) => {
+                setSelectedTopicId(topic);
+                setGameState("start");
+              }}
+            />
+          )}
+
+          {gameState === "start" && (
+            <StartScreen 
+              onStart={handleStart} 
+              onBack={() => setGameState("entry")}
+            />
+          )}
+
           {gameState === "playing" && shuffledQuestions.length > 0 && (
             <div className="p-8">
               <Timer timeLeft={timeLeft} />
@@ -93,21 +115,23 @@ function App() {
                 selectedAnswer={selectedAnswer}
                 totalQuestions={shuffledQuestions.length}
                 currentQuestion={currentQuestion}
+                onExitQuiz={() => setGameState("entry")}
               />
               <div className="mt-6 text-center text-gray-600">
                 Score: {score}/{shuffledQuestions.length}
               </div>
             </div>
           )}
+
           {gameState === "end" && (
             <GameOver
               totalQuestions={shuffledQuestions.length}
               score={score}
-              onRestart={handleStart}
+              onRestart={() => setGameState("entry")}
               wrongAnswers={wrongAnswers}
             />
           )}
-        </div>
+        {/* </div> */}
       </main>
     </div>
   );
