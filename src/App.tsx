@@ -16,7 +16,6 @@ function App() {
   const [currentQuestion, setCurrentQuestion] = useState<number>(0);
   const [selectedAnswer, setSelectedAnswer] = useState<number | null>(null);
   const [timeLeft, setTimeLeft] = useState<number>(300);
-  const [questionCount, setQuestionCount] = useState<number>(5);
   const [shuffledQuestions, setShuffledQuestions] = useState<typeof QUESTIONS>([]);
   const [wrongAnswers, setWrongAnswers] = useState<[string, string[], string][]>([]);
 
