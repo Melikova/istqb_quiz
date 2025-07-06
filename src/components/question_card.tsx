@@ -28,7 +28,7 @@ export default function QuestionCard({
     if (index === selectedAnswer) return "bg-red-100 border-red-500";
     return "opacity-50";
   };
-
+ 
   return (
     <div>
       <div className="flex items-center justify-between mb-4">

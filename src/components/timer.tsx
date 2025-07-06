@@ -14,5 +14,5 @@ export default function Timer({ timeLeft }: TimerProps) {
       <TimerIcon className="w-6 h-6" />
       <span>{formattedTime}</span>
     </div>
-  );
+  ); 
 }

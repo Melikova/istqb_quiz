@@ -445,7 +445,7 @@ export const QUESTIONS: Question[] = [
   <li class='mb-2'><b>This testing does not require knowledge of internal code structure:</b><br> It can be performed as black-box testing using timers and logs to verify response time.</li>\
 </ul>",
   correct: 1
-},
+}, 
 {
   id:21,
   topicId: "experience-based",

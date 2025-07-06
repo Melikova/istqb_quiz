@@ -32,7 +32,7 @@ export default function GameOver({onRestart, score, totalQuestions, wrongAnswers
       <p className="text-lg text-gray-600">
         Final Score: {score}/{totalQuestions}
       </p>
-
+ 
       {wrongAnswers.length > 0 && (
         <div className="mt-6 text-left mx-auto">
           <h3 className="text-lg font-semibold mb-4">Click to Review Incorrect Answers:</h3>

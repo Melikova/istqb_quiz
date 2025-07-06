@@ -13,7 +13,7 @@ export default function StartScreen({ onStart, onBack, maxQuestionCount }: Start
   useEffect(() => {
     setQuestionCount(Math.min(5, maxQuestionCount)); // reset when topic changes
   }, [maxQuestionCount]);
-
+ 
   const options = [];
   for (let i = 1; i <= maxQuestionCount; i++) {
     options.push(i);
