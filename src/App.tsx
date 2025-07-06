@@ -16,6 +16,7 @@ function App() {
   const [currentQuestion, setCurrentQuestion] = useState<number>(0);
   const [selectedAnswer, setSelectedAnswer] = useState<number | null>(null);
   const [timeLeft, setTimeLeft] = useState<number>(300);
+  // const [questionCount, setQuestionCount] = useState<number>(5);
   const [shuffledQuestions, setShuffledQuestions] = useState<typeof QUESTIONS>([]);
   const [wrongAnswers, setWrongAnswers] = useState<[string, string[], string][]>([]);
 
@@ -49,7 +50,7 @@ function App() {
 
     setShuffledQuestions(shuffled);
     setGameState("playing");
-    setTimeLeft(count * 60); // Set 1 minute per question
+    setTimeLeft(count * 60);
     setScore(0);
     setCurrentQuestion(0);
     setSelectedAnswer(null);
@@ -101,7 +102,7 @@ function App() {
         {gameState === "start" && selectedTopicId && (
           <StartScreen
             onStart={(count) => {
-              setQuestionCount(count);
+              // setQuestionCount(count);
               handleStart(count);
             }}
             onBack={() => setGameState("entry")}
