@@ -10,6 +10,7 @@ import Timer from "./components/timer";
 import { shuffleArray } from "./utils/shuffle";
 
 function App() {
+  window.scrollTo({ top: 0, behavior: "smooth" });
   const [gameState, setGameState] = useState<GameState>("entry");
   const [selectedTopicId, setSelectedTopicId] = useState<string | null>(null);
   const [score, setScore] = useState<number>(0);
@@ -34,8 +35,6 @@ function App() {
 
   const handleStart = (count: number) => {
     if (!selectedTopicId) return;
-
-    window.scrollTo({ top: 0, behavior: "smooth" });
 
     const topicQuestions = QUESTIONS.filter((q) => q.topicId === selectedTopicId);
 
