@@ -1043,10 +1043,61 @@ export const QUESTIONS: Question[] = [
     </ul>
   `,
   correct: 3
+},
+{
+  id: 46,
+  topicId: "why-testing-necessary",
+  question: "Which of the following statements about quality assurance (QA) and/or quality control (QC) is correct?",
+  options: [
+    ["QA is performed as part of testing", "Quality Assurance is a broader process framework; testing is one of its activities—not the other way around."],
+    ["Testing is performed as part of QC", "Quality Control focuses on identifying defects through inspection and testing. Testing is indeed a part of QC."],
+    ["Testing is another term for QC", "While testing is a component of QC, they are not synonymous. QC includes other defect-detection techniques beyond testing."],
+    ["Testing is performed as part of QA", "Quality Assurance is focused on preventing defects by improving the process, whereas testing identifies defects—so testing is not a QA activity."]
+  ],
+  keyPoints: `
+    <h3 class='text-green-600'>Essential Key Points to Answer This Question:</h3>
+    <ul>
+      <li class='mb-2'><b>Quality Assurance (QA):</b> Focuses on process improvement and defect prevention. It sets up the framework for quality but doesn't include testing itself.</li>
+      <li class='mb-2'><b>Quality Control (QC):</b> Involves operational techniques and activities like reviews, inspections, and <b>testing</b> to detect defects.</li>
+      <li class='mb-2'><b>Testing is part of QC, not QA:</b> It helps to identify defects after the software is developed, contributing to product quality control.</li>
+    </ul>
+  `,
+  correct: 1
+},
+{
+  id: 47,
+  topicId: "testing-principles",
+  question: "One of the ‘principles of testing’ states that exhaustive testing is impossible. Which of the following is an example of addressing this principle in practice?",
+  options: [
+    ["Creating test cases that cover every possible specified output", "The principle states that it is not feasible to test everything except in trivial cases. Testing everything would require testing every possible variation of inputs in all different circumstances, which is generally infeasible as there will be a practically infinite number of possibilities. Testing every possible expected result will not address this problem as the relationship between inputs and expected results can be different for each test object. Sometimes there may be a practically infinite number of possible expected results (e.g., when there are several variables representing real numbers), whereas at other times there may be just two expected results, such as with a single variable that can be either true or false"],
+    ["Documenting all possible test input variations and prioritizing these based on importance", " The principle states that it is not feasible to test every possible variation of inputs in all different circumstances. This is because for non-trivial systems there is a practically infinite number. Therefore, in practice, documenting all possible input variations would be impractical as it would take an infinite length of time"],
+    ["Starting testing as early as possible with reviews and other static testing approaches", "Starting testing as early as possible with reviews and other static testing approaches will not address the problem of there being too many possible test cases. The ‘early testing saves time and money’ principle is concerned with fixing defects early on to prevent the occurrence of subsequent defects in derived work products, thereby reducing costs and the likelihood of failures"],
+    ["Using equivalence partitioning and boundary value analysis to generate test cases", "Correct – these techniques reduce the test set while maintaining effectiveness, supporting the idea that exhaustive testing is impossible."]
+  ],
+  keyPoints: "<h3 class='text-green-600'>Essential Key Points to Answer This Question:</h3>\
+<ul>\
+  <li class='mb-2'><b>Exhaustive testing is not practical:</b> There are too many possible combinations of inputs, paths, and data to test everything.</li>\
+  <li class='mb-2'><b>Equivalence partitioning and boundary value analysis:</b> These are test design techniques that help reduce the number of test cases while still providing good coverage.</li>\
+  <li class='mb-2'><b>The goal is to be efficient:</b> Instead of testing all inputs, we divide them into groups and test representative values from each group (equivalence classes), and focus on edge conditions (boundaries).</li>\
+</ul>",
+  correct: 3
+},
+{
+  id: 48,
+  topicId: "test-activities-roles",
+  question: "Which test activity involves working with test data requirements, test conditions, test environment requirements and test cases?",
+  options: [
+    ["Test design", "Correct – Test design involves creating and prioritizing test cases, identifying test data, and determining environment needs based on test conditions."],
+    ["Test execution", "Test execution involves executing test cases (as part of test procedures), however it does not directly cover the other testware mentioned in the question, such as test data requirements, test environment requirements and test conditions"],
+    ["Test analysis", "Test analysis is used to identify the features that require testing. The test basis is analyzed and defined as test conditions, which are then prioritized along with related risks. While this activity involves working with test conditions, it does not cover the other testware mentioned in the question, such as test data requirements, test environment requirements and test cases"],
+    ["Test implementation", "Test implementation includes the generation of test procedures, such as manual and automated test scripts, which are created from test cases and may be assembled into test suites. Test procedures are prioritized and arranged in a test execution schedule. Test data is created, and the test environment built, and its set up verified. While this activity involves explicitly working with test cases, and may use test data requirements and test environment requirements to create test data and the test environment, it does not cover test conditions"]
+  ],
+  keyPoints: "<h3 class='text-green-600'>Essential Key Points to Answer This Question:</h3>\
+<ul>\
+  <li class='mb-2'><b>Test design is focused on defining how testing will be done:</b> This includes selecting test conditions, identifying test cases, determining required test data, and considering test environment needs.</li>\
+  <li class='mb-2'><b>It bridges the gap between planning and execution:</b> Without test design, proper test coverage cannot be ensured.</li>\
+  <li class='mb-2'><b>Other stages:</b> Test analysis comes earlier (deriving test conditions), test implementation finalizes testware, and test execution runs tests.</li>\
+</ul>",
+  correct: 0
 }
-
-
-
-
-
 ];
