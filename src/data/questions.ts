@@ -941,5 +941,112 @@ export const QUESTIONS: Question[] = [
   <li class='mb-2'><b>Daily builds require frequent confirmation testing to ensure fixes are correctly included and functional.</b></li>\
 </ul>",
   "correct": 2
+},
+{
+  id: 41,
+  topicId: "what-is-testing",
+  question: "Which of the following is a typical test objective?",
+  options: [
+    ["Finding and fixing defects in the test object", "Testers find defects, but fixing them is a developer's responsibility."],
+    ["Maintaining effective communications with developers", "This is a good practice, but not a core test objective."],
+    ["Validating that legal requirements have been met", "This may be part of compliance testing, but is not a general objective of testing."],
+    ["Building confidence in the quality of the test object", "Correct: A key objective of testing is to build confidence in the software product's quality."]
+  ],
+  keyPoints: `
+    <h3 class='text-green-600'>Essential Key Points to Answer This Question:</h3>
+    <ul>
+      <li class='mb-2'><b>Testing has several key objectives:</b> These include finding defects, providing information for decision-making, preventing defects, and <b>building confidence in the quality of the software</b>.</li>
+      <li class='mb-2'><b>Testers do not fix defects:</b> That is the responsibility of the developers. Testers identify and report them.</li>
+      <li class='mb-2'><b>Good communication</b> is a valuable practice but not classified as a formal test objective.</li>
+      <li class='mb-2'><b>Validating legal requirements</b> may be done during compliance testing, but it's not a general objective that applies to all testing.</li>
+    </ul>
+  `,
+  correct: 3
+},
+{
+  id: 42,
+  topicId: "what-is-testing",
+  question: "Which of the following is a typical test objective?",
+  options: [
+    ["Validating that documented requirements are met", "Validation refers to meeting user needs, not documented requirements. Verification checks the documented requirements."],
+    ["Causing failures and identifying defects", "This is a common goal of dynamic testing: to expose failures and identify defects."],
+    ["Initiating errors and identifying root causes", "Errors are made by developers, not initiated by testers. Root cause analysis is part of debugging, not testing."],
+    ["Verifying the test object meets user expectations", "Verification deals with documented requirements. Meeting user expectations is part of validation."]
+  ],
+  keyPoints: `
+    <h3 class='text-green-600'>Essential Key Points to Answer This Question:</h3>
+    <ul>
+      <li class='mb-2'><b>Testing aims to cause failures and identify defects:</b> This is a fundamental purpose of dynamic testing.</li>
+      <li class='mb-2'><b>Validation vs Verification:</b> Validation checks if the system meets user needs. Verification checks if the system meets specified requirements.</li>
+      <li class='mb-2'><b>Errors are not initiated by testers:</b> They occur due to human mistakes during development and are found through testing activities.</li>
+      <li class='mb-2'><b>Root cause analysis and debugging</b> are activities typically done by developers, not testers.</li>
+    </ul>
+  `,
+  correct: 1
+},
+{
+  id: 43,
+  topicId: "what-is-testing",
+  question: "Which of the following statements BEST describes the difference between testing and debugging?",
+  options: [
+    ["Testing causes failures while debugging fixes failures", "Testing reveals failures but does not cause them. Debugging is about fixing defects, not just failures."],
+    ["Testing is a negative activity while debugging is a positive activity", "This is a subjective view. Both are essential and neutral parts of development and quality assurance."],
+    ["Testing determines that defects exist while debugging removes defects", "Testing shows that defects are present, while debugging identifies and fixes them."],
+    ["Testing finds the cause of defects while debugging fixes the cause of defects", "Testing detects that a problem exists. Debugging is the process of locating and fixing the cause."]
+  ],
+  keyPoints: `
+    <h3 class='text-green-600'>Essential Key Points to Answer This Question:</h3>
+    <ul>
+      <li class='mb-2'><b>Testing and debugging are separate but complementary activities:</b> Testing identifies that a defect exists, often through failures.</li>
+      <li class='mb-2'><b>Debugging is the process of locating the cause of a defect and fixing it:</b> It usually starts after a defect is reported by testing.</li>
+      <li class='mb-2'><b>Testers do not fix defects:</b> They provide information about what is wrong, which helps developers in debugging.</li>
+    </ul>
+  `,
+  correct: 2
+},
+{
+  id: 44,
+  topicId: "why-testing-necessary",
+  question: "In what way does root cause analysis contribute to quality assurance?",
+  options: [
+    ["Helps to better identify and correct the root cause of defects", "RCA identifies the underlying reasons defects occur so they can be addressed, improving long-term quality."],
+    ["Outlines how development teams can code faster", "RCA focuses on quality improvements, not coding speed."],
+    ["Specifies the desired root causes to be achieved by other teams", "RCA aims to eliminate root causes of defects, not set them as goals."],
+    ["Contributes to the justification of future project funding", "While RCA might inform decisions, its primary purpose is not budget-related."]
+  ],
+  keyPoints: `
+    <h3 class='text-green-600'>Essential Key Points to Answer This Question:</h3>
+    <ul>
+      <li class='mb-2'><b>Root Cause Analysis (RCA) is a systematic method:</b> It identifies the fundamental source of defects to prevent recurrence.</li>
+      <li class='mb-2'><b>In quality assurance, RCA improves processes:</b> This helps avoid similar defects in future builds or releases.</li>
+      <li class='mb-2'><b>RCA is preventive, not reactive:</b> It focuses on improving long-term quality by addressing issues at their source.</li>
+    </ul>
+  `,
+  correct: 0
+},
+{
+  id: 45,
+  topicId: "why-testing-necessary",
+  question: "Which of the following is an example of why testing is necessary?",
+  options: [
+    ["Dynamic testing increases quality by causing test objects to fail in ways that could never be achieved by the users", " It is often possible to use dynamic testing to cause a test object to fail in ways that could never be achieved by the users, such as by using fault injection. However, if the failure can never occur with real end users, then identifying it is not especially valuable as testing is ultimately aimed at improving the work product for the end users. Spending time testing for failures that cannot occur with real users is not an efficient use of a tester’s time"],
+    ["Static testing is used by developers to identify failures in their code earlier than can be achieved through dynamic testing", "Static testing in the form of static analysis is used by developers to identify defects in their code earlier than can be achieved through dynamic testing. Note, however, that static testing (and static analysis) is used to detect defects, not failures, which are found by dynamic testing. Thus it is the use of the term ‘failures’ that makes this an incorrect option"],
+    ["Static analysis provides evidence to customers that the elements of the system that provide no outputs are fit for release", "Static analysis directly detects defects in code, and this is normally information for the developer, not the customer."],
+    ["Reviews increase the quality of requirements specifications and lead to fewer changes being needed in derived work products", "Reviews are a form of static testing that can be applied from the very start of the software development lifecycle and are used to find defects that can be removed before subsequent development activities waste effort on faulty requirements. If the defects are not detected and removed early on, then when the defect is found in derived work products, such as the design and code, the requirements will need to be changed."]
+  ],
+  keyPoints: `
+    <h3 class='text-green-600'>Essential Key Points to Answer This Question:</h3>
+    <ul>
+      <li class='mb-2'><b>Reviews are part of static testing:</b> They are used early in the process to identify issues in documents like requirements and designs.</li>
+      <li class='mb-2'><b>High-quality requirements reduce defects later:</b> Fewer misunderstandings lead to less rework in development and testing.</li>
+      <li class='mb-2'><b>Testing is necessary to manage risk:</b> The earlier defects are found, the cheaper they are to fix and the higher the product quality.</li>
+    </ul>
+  `,
+  correct: 3
 }
+
+
+
+
+
 ];

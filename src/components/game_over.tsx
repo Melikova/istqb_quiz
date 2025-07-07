@@ -62,7 +62,7 @@ export default function GameOver({onRestart, score, totalQuestions, wrongAnswers
         onClick={onRestart}
         className="mt-6 inline-flex items-center px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition-colors cursor-pointer"
       >
-        Start Again
+        Back to Topics
       </button>
 
       {/* Modal */}

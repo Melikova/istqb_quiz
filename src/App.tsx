@@ -35,6 +35,8 @@ function App() {
   const handleStart = (count: number) => {
     if (!selectedTopicId) return;
 
+    window.scrollTo({ top: 0, behavior: "smooth" });
+
     const topicQuestions = QUESTIONS.filter((q) => q.topicId === selectedTopicId);
 
     const shuffled = shuffleArray(topicQuestions)
