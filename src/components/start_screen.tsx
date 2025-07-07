@@ -40,7 +40,7 @@ export default function StartScreen({ onStart, onBack, maxQuestionCount }: Start
             random questions per session.
           </li>
           <li>Answer options are shuffled each time.</li>
-          <li>Time limit: {questionCount} minutes.</li>
+          <li>Time limit: {questionCount} minute{questionCount !== 1 ? "s" : ""}.</li>
           {/* <li>Each correct answer gives 1 point. No negative marking.</li> */}
           <li>You can't go back once an answer is selected.</li>
           <li>Quiz ends when all questions are answered or time runs out.</li>
