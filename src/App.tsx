@@ -21,6 +21,11 @@ function App() {
   const [wrongAnswers, setWrongAnswers] = useState<[string, string[], string][]>([]);
 
   useEffect(() => {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+}, [gameState]);
+
+
+  useEffect(() => {
     let timer: ReturnType<typeof setInterval>;
     if (gameState === "playing" && timeLeft > 0) {
       timer = setInterval(() => {
@@ -34,8 +39,6 @@ function App() {
 
   const handleStart = (count: number) => {
     if (!selectedTopicId) return;
-
-    window.scrollTo({ top: 0, behavior: "smooth" });
 
     const topicQuestions = QUESTIONS.filter((q) => q.topicId === selectedTopicId);
 
