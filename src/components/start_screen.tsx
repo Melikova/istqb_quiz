@@ -41,10 +41,10 @@ export default function StartScreen({ onStart, onBack, maxQuestionCount }: Start
           </li>
           <li>Answer options are shuffled each time.</li>
           <li>Time limit: {questionCount} minutes.</li>
-          <li>Each correct answer gives 1 point. No negative marking.</li>
+          {/* <li>Each correct answer gives 1 point. No negative marking.</li> */}
           <li>You can't go back once an answer is selected.</li>
           <li>Quiz ends when all questions are answered or time runs out.</li>
-          <li>You can restart after the quiz ends.</li>
+          {/* <li>You can restart after the quiz ends.</li> */}
         </ul>
         <ul className="list-disc pl-5 space-y-1 text-sm sm:text-base mt-5 font-semibold">
           <li>After the quiz, you can review your incorrect answers</li>
