@@ -1099,5 +1099,25 @@ export const QUESTIONS: Question[] = [
   <li class='mb-2'><b>Other stages:</b> Test analysis comes earlier (deriving test conditions), test implementation finalizes testware, and test execution runs tests.</li>\
 </ul>",
   correct: 0
+},
+{
+  id: 49,
+  topicId: "white-box",
+  question: "Let the branch coverage metric be defined as BCov = (X / Y) * 100%. What do X and Y represent in this formula?",
+  options: [
+    ["X = number of decision outcomes exercised by the test cases; Y = total number of decision outcomes in the code", "A decision outcome is a conditional branch. For branch testing, X counts not only conditional, but also unconditional branches"],
+    ["X = number of conditional branches exercised by the test cases; Y = total number of branches in the code", " Branch coverage counts not only conditional, but also unconditional branches"],
+    ["X = number of branches exercised by the test cases; Y = total number of branches in the code", "Correct – Branch coverage evaluates how many of the possible branches (true/false paths from decisions) have been executed."],
+    ["X = number of conditional branches exercised by the test cases; Y = total number of decision outcomes in the code", "Both X and Y count only conditional branches and do not take into account the unconditional branches"]
+  ],
+  keyPoints: "<h3 class='text-green-600'>Essential Key Points to Answer This Question:</h3>\
+<ul>\
+  <li class='mb-2'><b>Branch Coverage (also known as Decision Coverage):</b> Measures whether each possible branch (true and false paths) from decision points has been executed.</li>\
+  <li class='mb-2'><b>In branch coverage:</b> X is the number of branches actually executed during testing, and Y is the total number of branches present in the code.</li>\
+  <li class='mb-2'><b>Branches come from decisions:</b> For example, an `if` condition has two branches — one for true, one for false.</li>\
+  <li class='mb-2'><b>This metric helps assess test thoroughness:</b> 100% branch coverage means every possible decision path has been tested at least once.</li>\
+</ul>",
+  correct: 2
 }
+
 ];
