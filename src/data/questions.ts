@@ -1118,6 +1118,26 @@ export const QUESTIONS: Question[] = [
   <li class='mb-2'><b>This metric helps assess test thoroughness:</b> 100% branch coverage means every possible decision path has been tested at least once.</li>\
 </ul>",
   correct: 2
+},
+{
+  "id": 50,
+  "topicId": "test-levels",
+  "question": "According to the testing quadrants model, which of the following falls into quadrant Q1 (“technology facing” and “support the team”)?",
+  "options": [
+    ["Usability testing", "Usability testing is business-facing and critiques the product (Quadrant Q3)."],
+    ["Functional testing", "Functional testing is business-facing and supports the team (Quadrant Q2)."],
+    ["User acceptance testing", "UAT is business-facing and critiques the product (Quadrant Q3)."],
+    ["Component integration testing", "Correct – This is technology-facing testing that supports the team (Quadrant Q1)."]
+  ],
+  "keyPoints": "<h3 class='text-green-600'>Essential Key Points to Answer This Question:</h3>\
+<ul>\
+  <li class='mb-2'><b>Agile Testing Quadrants:</b> Q1 = technology-facing & supports the team; Q2 = business-facing & supports the team; Q3 = business-facing & critiques the product; Q4 = technology-facing & critiques the product.</li>\
+  <li class='mb-2'><b>Q1 tests include:</b> unit tests, component integration tests – help guide development and are typically automated.</li>\
+  <li class='mb-2'><b>Component integration testing:</b> Fits Q1 because it helps developers confirm that integrated components interact correctly and guides development.</li>\
+  <li class='mb-2'><b>Other test types:</b> Usability and UAT fall into Q3 (product critique, business-facing), and system tests like performance/security may fall into Q4.</li>\
+</ul>",
+  "correct": 3
 }
+
 
 ];
