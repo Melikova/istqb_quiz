@@ -1137,7 +1137,102 @@ export const QUESTIONS: Question[] = [
   <li class='mb-2'><b>Other test types:</b> Usability and UAT fall into Q3 (product critique, business-facing), and system tests like performance/security may fall into Q4.</li>\
 </ul>",
   "correct": 3
+},
+{
+  "id": 51,
+  "topicId": "what-is-testing",
+  "question": "A typical objective of testing is to:",
+  "options": [
+    ["Determine the most appropriate level of detail with which to design test cases", "This is more of a test planning activity rather than a core test objective."],
+    ["Verify the compliance of the test object with regulatory requirements", "Correct – Testing often aims to ensure that software complies with legal, safety, and regulatory requirements."],
+    ["Plan test activities in accordance with the existing test policy and test strategy", "This is a test management activity, not a primary test objective."],
+    ["Verify the correct creation and configuration of the test environment", "While important, setting up the test environment supports testing rather than being a test objective itself."]
+  ],
+  "keyPoints": "<h3 class='text-green-600'>Essential Key Points to Answer This Question:</h3>\
+<ul>\
+  <li class='mb-2'><b>Typical test objectives include:</b> finding defects, gaining confidence in software quality, verifying compliance, and ensuring requirements are met.</li>\
+  <li class='mb-2'><b>Regulatory compliance:</b> is a critical objective, especially in safety-critical or regulated industries (e.g., healthcare, finance).</li>\
+  <li class='mb-2'><b>Planning and setup activities:</b> like designing test cases or configuring environments are preparatory, not objectives of testing itself.</li>\
+</ul>",
+  "correct": 1
+},
+{
+  "id": 52,
+  "topicId": "what-is-testing",
+  "question": "Which of the following is a valid test objective?",
+  "options": [
+    ["Finding the stable areas of the code which do not require testing", "This is not a valid objective. Testing should aim to confirm stability, not assume it."],
+    ["Debugging incidents to determine the cause of the problem", "Debugging is done after testing identifies an issue, but it’s not a test objective."],
+    ["Finding failures and defects in the test object", "Correct – This is a core objective of testing: to uncover issues and confirm behavior."],
+    ["Participating in code reviews to improve scripting skills", "While useful, this is a learning/development activity, not a formal objective of testing."]
+  ],
+  "keyPoints": "<h3 class='text-green-600'>Essential Key Points to Answer This Question:</h3>\
+<ul>\
+  <li class='mb-2'><b>Test objectives:</b> include detecting defects, confirming software works as expected, and assessing quality risks.</li>\
+  <li class='mb-2'><b>Debugging:</b> is the developer's responsibility after a tester finds a defect – not a tester's main objective.</li>\
+  <li class='mb-2'><b>Code reviews:</b> and skill improvement are valuable, but they fall under training or development processes, not test objectives.</li>\
+</ul>",
+  "correct": 2
+},
+{
+  "id": 53,
+  "topicId": "what-is-testing",
+  "question": "A typical objective of testing is to ensure that:",
+  "options": [
+    [
+      "Testing is used to drive the development of a software",
+      "This describes a development approach like Test-Driven Development, but it is not a typical objective of testing itself."
+    ],
+    [
+      "A software has been tested using a combination of test techniques",
+      "Using multiple test techniques is a good practice, but the objective is to find defects and reduce risks, not just to apply techniques."
+    ],
+    [
+      "There are no defects in a software that is about to be released",
+      "Testing cannot guarantee a defect-free product; it only aims to reduce risks by finding defects."
+    ],
+    [
+      "A software has been properly covered",
+      "Correct – Ensuring proper coverage is a key objective of testing to reduce quality risks and confirm adequate testing."
+    ]
+  ],
+  "keyPoints": "<h3 class='text-green-600'>Essential Key Points to Answer This Question:</h3>\
+<ul>\
+  <li class='mb-2'><b>Test objectives:</b> include confirming adequate coverage, detecting defects, and reducing quality risks.</li>\
+  <li class='mb-2'>Testing cannot guarantee zero defects but reduces risks to acceptable levels.</li>\
+  <li class='mb-2'>Applying multiple test techniques is a method, not an objective.</li>\
+  <li class='mb-2'>Driving development (like TDD) is a development practice, not a typical test objective.</li>\
+</ul>",
+  "correct": 3
+},
+{
+  "id": 54,
+  "topicId": "what-is-testing",
+  "question": "Which of the following statements is NOT an objective of testing? Select exactly one option (1 out of 4)!",
+  "options": [
+    [
+      "Create confidence in the quality of the test object.",
+      "Creating confidence in quality is a primary objective of testing."
+    ],
+    [
+      "Check whether the test object is complete with regard to the requirements.",
+      "Verifying completeness against requirements is a valid testing objective."
+    ],
+    [
+      "Provide sufficient information for stakeholders to make decisions.",
+      "Providing decision-making information is a core objective of testing."
+    ],
+    [
+      "Fix defects after they have been found and analyzed.",
+      "Correct – Fixing defects is a development activity, not an objective of testing."
+    ]
+  ],
+  "keyPoints": "<h3 class='text-green-600'>Essential Key Points to Answer This Question:</h3>\
+<ul>\
+  <li class='mb-2'><b>Testing objectives:</b> include evaluating quality, verifying completeness, and providing information for decisions.</li>\
+  <li class='mb-2'>Fixing defects is the responsibility of developers and is not a testing objective.</li>\
+  <li class='mb-2'>Testing focuses on detection and information, not on correction of defects.</li>\
+</ul>",
+  "correct": 3
 }
-
-
 ];
