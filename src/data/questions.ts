@@ -1234,5 +1234,36 @@ export const QUESTIONS: Question[] = [
   <li class='mb-2'>Testing focuses on detection and information, not on correction of defects.</li>\
 </ul>",
   "correct": 3
+},
+{
+  "id": 55,
+  "topicId": "testing-skills-practices",
+  "question": "How is the whole team approach present in the interactions between testers and business representatives?",
+  "options": [
+    [
+      "Business representatives decide on test automation approaches",
+      "Test automation approaches are usually a technical decision involving testers and developers, not solely business representatives."
+    ],
+    [
+      "Testers help business representatives to define a test strategy",
+      "While testers contribute to test strategies, defining it is a broader team responsibility, not limited to testers helping business representatives."
+    ],
+    [
+      "Business representatives are not part of the whole team approach",
+      "Business representatives are key members of the whole team approach and actively collaborate with testers."
+    ],
+    [
+      "Testers help business representatives to create suitable acceptance tests",
+      "Correct – In the whole team approach, testers collaborate with business representatives to define clear and suitable acceptance tests that reflect business requirements."
+    ]
+  ],
+  "keyPoints": "<h3 class='text-green-600'>Essential Key Points to Answer This Question:</h3>\
+<ul>\
+  <li class='mb-2'><b>Whole team approach:</b> promotes collaboration between testers, developers, and business representatives throughout the testing process.</li>\
+  <li class='mb-2'>Testers work with business stakeholders to create acceptance tests that ensure requirements are met.</li>\
+  <li class='mb-2'>Business representatives are involved actively and are not excluded from testing decisions.</li>\
+</ul>",
+  "correct": 3
 }
+
 ];
